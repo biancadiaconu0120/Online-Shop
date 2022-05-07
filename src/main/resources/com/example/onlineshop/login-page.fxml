@@ -46,6 +46,12 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Button fx:id="signIn" layoutX="424.0" layoutY="454.0" mnemonicParsing="false" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Sign in" />
+        <Button fx:id="signIn" layoutX="424.0" layoutY="454.0" mnemonicParsing="false" onAction="#checkLogin" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Sign in" />
+      <Button fx:id="register" layoutX="594.0" layoutY="454.0" mnemonicParsing="false" onAction="#goToRegisterPage" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Register" />
+      <Label fx:id="wrongLogin" layoutX="419.0" layoutY="513.0" prefHeight="30.0" prefWidth="350.0" style="-fx-text-fill: #F490B3;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

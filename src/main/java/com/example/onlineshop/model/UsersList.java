@@ -24,6 +24,9 @@ public class UsersList {
                 throw new UsernameAlreadyExistsException(username);
         }
     }
+    public static boolean checkUserCredentials(User user) {
+        return users.contains(user);
+    }
 
     @Override
     public String toString() {
@@ -41,6 +44,7 @@ public class UsersList {
             e.printStackTrace();
         }
     }
+
 
     public static ArrayList<User> getUsers() {
         return users;
