@@ -30,12 +30,12 @@
         </Label>
         <Label layoutX="428.0" layoutY="189.0" prefHeight="25.0" prefWidth="81.0" text="Username">
             <font>
-                <Font size="15.0" />
+                <Font name="Cambria" size="15.0" />
             </font>
         </Label>
         <Label layoutX="428.0" layoutY="264.0" prefHeight="25.0" prefWidth="81.0" text="Password">
             <font>
-                <Font size="15.0" />
+                <Font name="Cambria" size="15.0" />
             </font>
         </Label>
         <TextField fx:id="username" layoutX="428.0" layoutY="221.0" promptText="Username" />
@@ -43,11 +43,17 @@
         <ChoiceBox fx:id="role" accessibleRole="CHECK_BOX" layoutX="424.0" layoutY="367.0" prefHeight="15.0" prefWidth="159.0" />
         <Label layoutX="428.0" layoutY="341.0" prefHeight="25.0" prefWidth="81.0" text="Role">
             <font>
-                <Font size="15.0" />
+                <Font name="Cambria" size="15.0" />
             </font>
         </Label>
-        <Button fx:id="signIn" layoutX="424.0" layoutY="454.0" mnemonicParsing="false" onAction="#checkLogin" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Sign in" />
-      <Button fx:id="register" layoutX="594.0" layoutY="454.0" mnemonicParsing="false" onAction="#goToRegisterPage" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Register" />
+        <Button fx:id="signIn" layoutX="424.0" layoutY="454.0" mnemonicParsing="false" onAction="#checkLogin" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Sign in">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font></Button>
+      <Button fx:id="register" layoutX="594.0" layoutY="454.0" mnemonicParsing="false" onAction="#goToRegisterPage" prefHeight="12.0" prefWidth="59.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Register">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font></Button>
       <Label fx:id="wrongLogin" layoutX="419.0" layoutY="513.0" prefHeight="30.0" prefWidth="350.0" style="-fx-text-fill: #F490B3;">
          <font>
             <Font size="14.0" />
