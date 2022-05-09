@@ -1,4 +1,4 @@
 package com.example.onlineshop.controllers;
 
-public class TrousersPageController {
+public class NewOrdersPageController {
 }
