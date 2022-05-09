@@ -45,7 +45,7 @@ public class HomePageControllerManager {
 
     public void goToBlousePage(ActionEvent event) throws IOException {
         Main m= new Main();
-        m.changeScene("blouse-page.fxml");
+        m.changeScene("blouse-page-manager.fxml");
     }
 
 
