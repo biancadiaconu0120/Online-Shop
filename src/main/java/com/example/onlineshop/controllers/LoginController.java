@@ -57,7 +57,12 @@ public class LoginController implements Initializable {
             }
             else if(UsersList.checkUserCredentials(new User(username.getText(),password.getText(),role.getValue()))) {
                 Main m= new Main();
-                m.changeScene("home-page-customer.fxml");
+                if(role.getValue().equals("customer")) {
+                    m.changeScene("home-page-customer.fxml");
+                }
+                else if(role.getValue().equals("manager")){
+                    m.changeScene("home-page-manager.fxml");
+                }
             }
             else {
                 wrongLogin.setText("User credentials are introduced wrong!");
