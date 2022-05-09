@@ -46,7 +46,7 @@ public class HomePageControllerCustomer {
 
     public void goToBlousePage(ActionEvent event) throws IOException {
         Main m= new Main();
-        m.changeScene("blouse-page.fxml");
+        m.changeScene("blouse-page-customer.fxml");
     }
 
     public void goToCartPage(ActionEvent event) throws IOException {
