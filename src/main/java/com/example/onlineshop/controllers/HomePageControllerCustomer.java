@@ -31,17 +31,17 @@ public class HomePageControllerCustomer {
 
     public void goToJacketPage(ActionEvent event) throws IOException {
         Main m= new Main();
-        m.changeScene("jacket-page.fxml");
+        m.changeScene("jacket-page-customer.fxml");
     }
 
     public void goToTrousersPage(ActionEvent event) throws IOException {
         Main m= new Main();
-        m.changeScene("trousers-page.fxml");
+        m.changeScene("trousers-page-customer.fxml");
     }
 
     public void goToDressPage(ActionEvent event) throws IOException {
         Main m= new Main();
-        m.changeScene("dress-page.fxml");
+        m.changeScene("dress-page-customer.fxml");
     }
 
     public void goToBlousePage(ActionEvent event) throws IOException {
