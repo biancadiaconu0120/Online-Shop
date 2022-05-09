@@ -7,7 +7,7 @@ import javafx.scene.control.Button;
 
 import java.io.IOException;
 
-public class HomePageController {
+public class HomePageControllerCustomer {
     @FXML
     private Button goToCart;
 
