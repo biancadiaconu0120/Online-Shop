@@ -10,8 +10,4 @@
   "username" : "Maria",
   "password" : "lalala",
   "role" : "customer"
-}, {
-  "username" : "lala",
-  "password" : "cas",
-  "role" : "manager"
 } ]
