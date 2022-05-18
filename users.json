@@ -10,4 +10,12 @@
   "username" : "Maria",
   "password" : "lalala",
   "role" : "customer"
+}, {
+  "username" : "Bia",
+  "password" : "bibi",
+  "role" : "manager"
+}, {
+  "username" : "bunaa",
+  "password" : "cefaci",
+  "role" : "customer"
 } ]
