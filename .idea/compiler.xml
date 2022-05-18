@@ -6,8 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Online-Shop-0358792523b3ebcb08a8ae83b5107afb6eeda874" />
         <module name="OnlineShop" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Online-Shop-0358792523b3ebcb08a8ae83b5107afb6eeda874" target="17" />
+      <module name="OnlineShop" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
