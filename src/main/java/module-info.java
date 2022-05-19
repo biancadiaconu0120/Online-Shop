@@ -3,6 +3,7 @@ module com.example.onlineshop {
     requires javafx.fxml;
     requires json;
     requires com.fasterxml.jackson.databind;
+    requires java.desktop;
 
 
     opens com.example.onlineshop to javafx.fxml;

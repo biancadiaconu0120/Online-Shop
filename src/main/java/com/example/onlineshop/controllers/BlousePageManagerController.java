@@ -29,6 +29,7 @@ public class BlousePageManagerController {
 
 
     public BlousePageManagerController() {
+
     }
 
     public void goToHomePage(ActionEvent event) throws IOException{
