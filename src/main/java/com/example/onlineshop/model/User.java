@@ -1,6 +1,8 @@
 package com.example.onlineshop.model;
 
 
+import static com.example.onlineshop.services.Encoding.encodePassword;
+
 public class User {
 
     public String username;
@@ -12,7 +14,7 @@ public class User {
 
     public User(String username, String password, String role) {
         this.username = username;
-        this.password = password;
+        this.password = encodePassword(username, password);
         this.role = role;
     }
 
