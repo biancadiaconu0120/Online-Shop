@@ -92,7 +92,7 @@ public class TrousersPageManagerController {
         loadImages();
     }
 
-    private int trousersNb=0;
+    private int blousesNb=0;
     private void loadImages(){
         int l = ItemsList.getImages().size();
         for (int i = 0; i < l; i++)
@@ -101,8 +101,8 @@ public class TrousersPageManagerController {
 
     public void loadImage(Item item, Image img){
         if(item.getCategory().equals("trousers")) {
-            trousersNb++;
-            switch(trousersNb){
+            blousesNb++;
+            switch(blousesNb){
                 case 1: image1.setImage(img);
                     break;
                 case 2: image2.setImage(img);
