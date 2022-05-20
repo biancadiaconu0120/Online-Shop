@@ -1,0 +1,26 @@
+[ {
+  "name" : "lala",
+  "price" : "22",
+  "imgPath" : "savedImage1.png",
+  "category" : "dress"
+}, {
+  "name" : "qss",
+  "price" : "ss",
+  "imgPath" : "savedImage2.png",
+  "category" : "blouse"
+}, {
+  "name" : "lala",
+  "price" : "aas",
+  "imgPath" : "savedImage3.png",
+  "category" : "dress"
+}, {
+  "name" : "ll",
+  "price" : "22",
+  "imgPath" : "savedImage4.png",
+  "category" : "jacket"
+}, {
+  "name" : "saf",
+  "price" : "sff",
+  "imgPath" : "savedImage5.png",
+  "category" : "trousers"
+} ]
