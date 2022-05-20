@@ -1,5 +1,6 @@
 package com.example.onlineshop;
 
+import com.example.onlineshop.model.ItemsList;
 import com.example.onlineshop.model.UsersList;
 import com.example.onlineshop.services.Register;
 import javafx.application.Application;
@@ -18,6 +19,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         UsersList.loadUsersFromFile();
+        ItemsList.loadItemsFromFile();
         stg=primaryStage;
         primaryStage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource("login-page.fxml"));

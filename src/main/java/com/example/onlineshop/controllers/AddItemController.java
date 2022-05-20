@@ -5,8 +5,8 @@ import com.example.onlineshop.model.ItemsList;
 import com.example.onlineshop.services.AddItem;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.stage.FileChooser;
 
@@ -14,10 +14,16 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
-public class AddItemController {
+public class AddItemController implements Initializable {
+
+    public AddItemController(){
+
+    }
 
     List<String> firstFile;
 
@@ -42,6 +48,16 @@ public class AddItemController {
     @FXML
     private Button addItemButton;
 
+    @FXML
+    private Label wrongInput;
+
+    @FXML
+    private ChoiceBox<String> itemCategory;
+
+    private String[] categories={"blouse","trousers","jacket","dress"};
+
+    private boolean imageUploaded=false;
+
 
     public void goToHomePage(ActionEvent event) throws IOException {
         Main m= new Main();
@@ -58,12 +74,6 @@ public class AddItemController {
         m.changeScene("login-page.fxml");
     }
 
-    public void initialize() {
-        firstFile = new ArrayList<>();
-        firstFile.add("*.jpg");
-        firstFile.add("*.png");
-        firstFile.add("*.jpeg");
-    }
 
     @FXML
     void uploadChoosenImage(ActionEvent event) {
@@ -77,22 +87,44 @@ public class AddItemController {
         File outputfile;
         try {
             BufferedImage bi = ImageIO.read(f);  // retrieve image
-            outputfile = new File("savedImage"+ ItemsList.getItems().size()+1+".png");
+            outputfile = new File("savedImage"+ (ItemsList.getItems().size()+1)+".png");
             ImageIO.write(bi, "png", outputfile);
+            imageUploaded=true;
         } catch (IOException e) {
-            // handle exception
+            wrongInput.setText("Please give an image!");
         }
     }
 
-    public void addItemInList(){
+    public void addItemInList() throws IOException {
         if(itemName.getText().isEmpty()){
-            System.out.println("Please give a Name!");
+            wrongInput.setText("Please give a Name!");
         }
         else if(itemPrice.getText().isEmpty()){
-            System.out.println("Please give a Price!");
+            wrongInput.setText("Please give a Price!");
         }
-        else
-            AddItem.addItem(itemName.getText(),itemPrice.getText(),"savedImage"+ ItemsList.getItems().size()+1+".png");
+        else if(!imageUploaded){
+            wrongInput.setText("Please give an image!");
+        }
+        else if(itemCategory.getValue()==null){
+            wrongInput.setText("Please give a category!");
+        }
+
+        else {
+            AddItem.addItem(itemName.getText(),itemPrice.getText(),"savedImage"+ (ItemsList.getItems().size()+1)+".png",itemCategory.getValue());
+            wrongInput.setText("Item added successfully");
+            Main m= new Main();
+            m.changeScene("blouse-page-manager.fxml");
+        }
+    }
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        itemCategory.getItems().addAll(categories);
+        firstFile = new ArrayList<>();
+        firstFile.add("*.jpg");
+        firstFile.add("*.png");
+        firstFile.add("*.jpeg");
     }
 
 }
