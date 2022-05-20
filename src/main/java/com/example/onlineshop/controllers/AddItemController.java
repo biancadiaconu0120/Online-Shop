@@ -112,8 +112,23 @@ public class AddItemController implements Initializable {
         else {
             AddItem.addItem(itemName.getText(),itemPrice.getText(),"savedImage"+ (ItemsList.getItems().size()+1)+".png",itemCategory.getValue());
             wrongInput.setText("Item added successfully");
-            Main m= new Main();
-            m.changeScene("blouse-page-manager.fxml");
+            if(itemCategory.getValue().equals("blouse")) {
+                Main m = new Main();
+                m.changeScene("blouse-page-manager.fxml");
+            }
+            else if(itemCategory.getValue().equals("dress")) {
+                Main m = new Main();
+                m.changeScene("dress-page-manager.fxml");
+            }
+            else if(itemCategory.getValue().equals("trousers")) {
+                Main m = new Main();
+                m.changeScene("trousers-page-manager.fxml");
+            }
+            else if(itemCategory.getValue().equals("jacket")) {
+                Main m = new Main();
+                m.changeScene("jacket-page-manager.fxml");
+            }
+
         }
     }
 

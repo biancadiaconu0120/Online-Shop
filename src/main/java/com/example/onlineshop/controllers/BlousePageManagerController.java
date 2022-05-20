@@ -84,14 +84,14 @@ public class BlousePageManagerController {
 
     }
 
-    private static BlousePageManagerController instance = null;
+    //private static BlousePageManagerController instance = null;
 
-    public static BlousePageManagerController getInstance() {
-        return instance;
-    }
+    //public static BlousePageManagerController getInstance() {
+       // return instance;
+    //}
 
     public void initialize(){
-        instance = this;
+        //instance = this;
         loadImages();
     }
 
@@ -128,31 +128,5 @@ public class BlousePageManagerController {
             }
         }
     }
-
-    /*
-    public void setImageView(Image img,int number) throws IOException {
-       switch(number){
-           case 1: image1.setImage(img);
-                   break;
-           case 2: image2.setImage(img);
-                   break;
-           case 3: image3.setImage(img);
-                   break;
-           case 4: image4.setImage(img);
-                   break;
-           case 5: image5.setImage(img);
-                    break;
-           case 6: image6.setImage(img);
-                    break;
-           case 7: image7.setImage(img);
-                    break;
-           case 8: image8.setImage(img);
-                    break;
-           case 9: image9.setImage(img);
-                   break;
-           default: throw new NullPointerException();
-       }
-    }
-    */
 
 }

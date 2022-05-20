@@ -2,6 +2,9 @@ package com.example.onlineshop.model;
 
 import com.example.onlineshop.Main;
 import com.example.onlineshop.controllers.BlousePageManagerController;
+import com.example.onlineshop.controllers.DressPageManagerController;
+import com.example.onlineshop.controllers.JacketPageManagerController;
+import com.example.onlineshop.controllers.TrousersPageManagerController;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -47,11 +50,29 @@ public class ItemsList {
 
     public static void addItem(Item newItem) throws IOException {
         Image image = readImage(newItem.getImgPath());
-        if (newItem.getCategory().equals("blouse")) {
+        if (newItem.getCategory().equals("blouse") && blousesNo<9) {
             blousesNo = blousesNo + 1;
             items.add(newItem);
             images.add(image);
-            BlousePageManagerController.getInstance().loadImage(newItem, image);
+            //BlousePageManagerController.getInstance().loadImage(newItem, image);
+        }
+        else if (newItem.getCategory().equals("trousers") && trousersNo<9) {
+            trousersNo = trousersNo + 1;
+            items.add(newItem);
+            images.add(image);
+            //TrousersPageManagerController.getInstance().loadImage(newItem, image);
+        }
+        else if (newItem.getCategory().equals("dress") && dressesNo<9) {
+            dressesNo = dressesNo + 1;
+            items.add(newItem);
+            images.add(image);
+            //DressPageManagerController.getInstance().loadImage(newItem, image);
+        }
+        else if (newItem.getCategory().equals("jacket") && jacketsNo<9) {
+            jacketsNo = jacketsNo + 1;
+            items.add(newItem);
+            images.add(image);
+            //JacketPageManagerController.getInstance().loadImage(newItem, image);
         }
     }
 
@@ -59,6 +80,7 @@ public class ItemsList {
     public static void loadItemsFromFile() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
 
+        //read items from json
         try {
             items = objectMapper.readValue(Paths.get("items.json").toFile(), new TypeReference<>() {});
         } catch (JsonParseException e) {
@@ -66,11 +88,31 @@ public class ItemsList {
             e.printStackTrace();
         }
 
+        //also load the images from the json file
         for (Item auxItem : items) {
             Image image = readImage(auxItem.getImgPath());
+
             if (auxItem.getCategory().equals("blouse")) {
                 if(blousesNo < 9) {
                     blousesNo = blousesNo + 1;
+                    images.add(image);
+                }
+            }
+            else if (auxItem.getCategory().equals("trousers")) {
+                if(trousersNo < 9) {
+                    trousersNo = trousersNo + 1;
+                    images.add(image);
+                }
+            }
+            else if (auxItem.getCategory().equals("dress")) {
+                if(dressesNo < 9) {
+                    dressesNo = dressesNo + 1;
+                    images.add(image);
+                }
+            }
+            else if (auxItem.getCategory().equals("jacket")) {
+                if(jacketsNo < 9) {
+                    jacketsNo = jacketsNo + 1;
                     images.add(image);
                 }
             }
