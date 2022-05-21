@@ -50,12 +50,16 @@ public class DressPageManagerController {
     @FXML
     private ImageView image9;
 
-    ArrayList<Item> dresses= new ArrayList<Item>(9);
-    private int dressesNb=0;
+    ArrayList<Item> dresses = new ArrayList<Item>(9);
+    private int dressesNb =0;
 
 
     public DressPageManagerController() {
 
+    }
+
+    public void initialize(){
+        loadImages();
     }
 
     public void goToHomePage(ActionEvent event) throws IOException {
@@ -78,114 +82,69 @@ public class DressPageManagerController {
         m.changeScene("add-item-page.fxml");
     }
 
+    private void deleteItem(int index)throws IOException{
+        ItemsList.getItems().remove(dresses.get(index));
+        dresses.remove(index);
+        dressesNb =0;
+        ItemsList.decreaseCategoryNo("dress");
+        Main m= new Main();
+        m.changeScene("dress-page-manager.fxml");
+        loadImages();
+        AddItem.persistItems();
+    }
+
+
+
     public void deleteItem1() throws IOException {
-            ItemsList.getItems().remove(dresses.get(0));
-            ItemsList.getImages().remove(0);
-            dresses.remove(0);
-            dressesNb=0;
-            Main m= new Main();
-            m.changeScene("dress-page-manager.fxml");
-            loadImages();
-            AddItem.persistItems();
+        ItemsList.getImages().remove(image1.getImage());
+        deleteItem(0);
     }
 
     public void deleteItem2() throws IOException {
-        ItemsList.getItems().remove(dresses.get(1));
-        ItemsList.getImages().remove(1);
-        dresses.remove(1);
-        dressesNb=0;
-        Main m= new Main();
-        m.changeScene("dress-page-manager.fxml");
-        loadImages();
-        AddItem.persistItems();
+        ItemsList.getImages().remove(image2.getImage());
+        deleteItem(1);
     }
 
     public void deleteItem3() throws IOException {
-        ItemsList.getItems().remove(dresses.get(2));
-        ItemsList.getImages().remove(2);
-        dresses.remove(2);
-        dressesNb=0;
-        Main m= new Main();
-        m.changeScene("dress-page-manager.fxml");
-        loadImages();
-        AddItem.persistItems();
+        ItemsList.getImages().remove(image3.getImage());
+        deleteItem(2);
     }
 
     public void deleteItem4() throws IOException {
-        ItemsList.getItems().remove(dresses.get(3));
-        ItemsList.getImages().remove(3);
-        dresses.remove(3);
-        dressesNb=0;
-        Main m= new Main();
-        m.changeScene("dress-page-manager.fxml");
-        loadImages();
-        AddItem.persistItems();
+        ItemsList.getImages().remove(image4.getImage());
+        deleteItem(3);
     }
 
     public void deleteItem5() throws IOException {
-        ItemsList.getItems().remove(dresses.get(4));
-        ItemsList.getImages().remove(4);
-        dresses.remove(4);
-        dressesNb=0;
-        Main m= new Main();
-        m.changeScene("dress-page-manager.fxml");
-        loadImages();
-        AddItem.persistItems();
+        ItemsList.getImages().remove(image5.getImage());
+        deleteItem(4);
     }
 
     public void deleteItem6() throws IOException {
-        ItemsList.getItems().remove(dresses.get(5));
-        ItemsList.getImages().remove(5);
-        dresses.remove(5);
-        dressesNb=0;
-        Main m= new Main();
-        m.changeScene("dress-page-manager.fxml");
-        loadImages();
-        AddItem.persistItems();
+        ItemsList.getImages().remove(image6.getImage());
+        deleteItem(5);
     }
 
     public void deleteItem7() throws IOException {
-        ItemsList.getItems().remove(dresses.get(6));
-        ItemsList.getImages().remove(6);
-        dresses.remove(6);
-        dressesNb=0;
-        Main m= new Main();
-        m.changeScene("dress-page-manager.fxml");
-        loadImages();
-        AddItem.persistItems();
+        ItemsList.getImages().remove(image7.getImage());
+        deleteItem(6);
     }
 
     public void deleteItem8() throws IOException {
-        ItemsList.getItems().remove(dresses.get(7));
-        ItemsList.getImages().remove(7);
-        dresses.remove(7);
-        dressesNb=0;
-        Main m= new Main();
-        m.changeScene("dress-page-manager.fxml");
-        loadImages();
-        AddItem.persistItems();
+        ItemsList.getImages().remove(image8.getImage());
+        deleteItem(7);
     }
 
     public void deleteItem9() throws IOException {
-        ItemsList.getItems().remove(dresses.get(8));
-        ItemsList.getImages().remove(8);
-        dresses.remove(8);
-        dressesNb=0;
-        Main m= new Main();
-        m.changeScene("dress-page-manager.fxml");
-        loadImages();
-        AddItem.persistItems();
+        ItemsList.getImages().remove(image9.getImage());
+        deleteItem(8);
     }
+
+
 
     public void editItem(){
 
     }
-
-
-    public void initialize(){
-        loadImages();
-    }
-
 
     private void loadImages(){
         int l = ItemsList.getImages().size();
@@ -198,44 +157,43 @@ public class DressPageManagerController {
             dressesNb++;
             switch(dressesNb){
                 case 1: image1.setImage(img);
-                        delete1.setVisible(true);
-                        dresses.add(0,item);
+                    delete1.setVisible(true);
+                    dresses.add(0,item);
                     break;
                 case 2: image2.setImage(img);
-                        delete2.setVisible(true);
-                        dresses.add(1,item);
+                    delete2.setVisible(true);
+                    dresses.add(1,item);
                     break;
                 case 3: image3.setImage(img);
-                        delete3.setVisible(true);
-                        dresses.add(2,item);
+                    delete3.setVisible(true);
+                    dresses.add(2,item);
                     break;
                 case 4: image4.setImage(img);
-                        delete4.setVisible(true);
-                        dresses.add(3,item);
+                    delete4.setVisible(true);
+                    dresses.add(3,item);
                     break;
                 case 5: image5.setImage(img);
-                        delete5.setVisible(true);
-                        dresses.add(4,item);
+                    delete5.setVisible(true);
+                    dresses.add(4,item);
                     break;
                 case 6: image6.setImage(img);
-                        delete6.setVisible(true);
-                        dresses.add(5,item);
+                    delete6.setVisible(true);
+                    dresses.add(5,item);
                     break;
                 case 7: image7.setImage(img);
-                        delete7.setVisible(true);
-                        dresses.add(6,item);
+                    delete7.setVisible(true);
+                    dresses.add(6,item);
                     break;
                 case 8: image8.setImage(img);
-                        delete8.setVisible(true);
-                        dresses.add(7,item);
+                    delete8.setVisible(true);
+                    dresses.add(7,item);
                     break;
                 case 9: image9.setImage(img);
-                        delete9.setVisible(true);
-                        dresses.add(8,item);
+                    delete9.setVisible(true);
+                    dresses.add(8,item);
                     break;
                 default: throw new NullPointerException();
             }
         }
     }
-
 }

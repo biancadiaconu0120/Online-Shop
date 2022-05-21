@@ -36,6 +36,17 @@ public class ItemsList {
         dressesNo=0;
     }
 
+    public static void decreaseCategoryNo(String category){
+        if(category.equals("dress") && dressesNo!=0)
+            dressesNo--;
+        else if(category.equals("blouse") && blousesNo!=0)
+            blousesNo--;
+        else if(category.equals("jacket") && jacketsNo!=0)
+            jacketsNo--;
+        else if(category.equals("trousers") && trousersNo!=0)
+            trousersNo--;
+    }
+
     private static Image readImage(String path) {
         BufferedImage bf = null;
         //Image img;
