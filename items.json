@@ -1,6 +1,6 @@
 [ {
-  "name" : "eff",
-  "price" : "gr",
+  "name" : "trousers0",
+  "price" : "13",
   "imgPath" : "savedImage1.png",
   "category" : "trousers"
 }, {
@@ -12,5 +12,15 @@
   "name" : "trouser1",
   "price" : "14",
   "imgPath" : "savedImage3.png",
+  "category" : "trousers"
+}, {
+  "name" : "Trouser2",
+  "price" : "20",
+  "imgPath" : "savedImage4.png",
+  "category" : "trousers"
+}, {
+  "name" : "trousers3",
+  "price" : "12",
+  "imgPath" : "savedImage5.png",
   "category" : "trousers"
 } ]

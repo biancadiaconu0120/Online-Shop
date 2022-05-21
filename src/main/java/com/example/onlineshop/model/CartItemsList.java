@@ -1,7 +1,5 @@
 package com.example.onlineshop.model;
 
-import javafx.scene.image.Image;
-
 import java.util.ArrayList;
 
 public class CartItemsList {
@@ -20,6 +18,19 @@ public class CartItemsList {
     public static String getIdOfItem(int index){
         return cartItemsList.get(index).getName().toString();
     }
+    public static String getDetails1(int index){
+        return cartItemsList.get(index).getPrice().toString()+" RON "+"    "+sizeList.get(index).toString();
+    }
+    public static int getPriceItems(int index){
+        int price_new;
+        price_new=Integer.parseInt(cartItemsList.get(index).getPrice());
+        return price_new;
+    }
+    public static void clear(){
+        cartItemsList.clear();
+    }
+
+
 
 
    @Override

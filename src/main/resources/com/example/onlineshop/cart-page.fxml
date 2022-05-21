@@ -24,7 +24,7 @@
       </Button>
       <ImageView fitHeight="223.0" fitWidth="216.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../img/LogoOnlineShop.png" />
+            <Image url="@img/LogoOnlineShop.png" />
          </image>
       </ImageView>
       <Pane layoutX="221.0" layoutY="-8.0" prefHeight="124.0" prefWidth="636.0" style="-fx-background-color: #FFF7FC; -fx-border-color: #F490B3;">
@@ -41,20 +41,20 @@
             <Font name="Cambria" size="12.0" />
          </font>
       </Label>
-      <Button fx:id="removeAll" layoutX="243.0" layoutY="547.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Remove all">
+      <Button fx:id="clearCartButton" layoutX="242.0" layoutY="534.0" mnemonicParsing="false" onAction="#clearCart" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Clear Cart">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
       <Label fx:id="ItemId1" alignment="CENTER" layoutX="242.0" layoutY="210.0" prefHeight="26.0" prefWidth="95.0" />
-      <Label alignment="CENTER" layoutX="414.0" layoutY="161.0" prefHeight="26.0" prefWidth="307.0" style="-fx-background-color: #F490B3;" text="Item Details" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutX="397.0" layoutY="161.0" prefHeight="26.0" prefWidth="307.0" style="-fx-background-color: #F490B3;" text="Item Details" textAlignment="CENTER">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="413.0" layoutY="210.0" prefHeight="26.0" prefWidth="307.0" />
-      <Label layoutX="746.0" layoutY="197.0" prefHeight="26.0" prefWidth="95.0" />
-      <Button fx:id="Checkout" layoutX="669.0" layoutY="547.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Checkout">
+      <Label fx:id="ItemDetail1" alignment="CENTER" layoutX="397.0" layoutY="210.0" prefHeight="26.0" prefWidth="307.0" />
+      <Label fx:id="totalPrice" layoutX="746.0" layoutY="210.0" prefHeight="26.0" prefWidth="95.0" />
+      <Button fx:id="Checkout" layoutX="673.0" layoutY="534.0" mnemonicParsing="false" onAction="#Checkout" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Checkout">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
@@ -63,14 +63,19 @@
       <Label fx:id="ItemId3" alignment="CENTER" layoutX="243.0" layoutY="288.0" prefHeight="26.0" prefWidth="95.0" />
       <Label fx:id="ItemId4" alignment="CENTER" layoutX="242.0" layoutY="327.0" prefHeight="26.0" prefWidth="95.0" />
       <Label fx:id="ItemId5" alignment="CENTER" layoutX="243.0" layoutY="369.0" prefHeight="26.0" prefWidth="95.0" />
-      <Label alignment="CENTER" layoutX="413.0" layoutY="252.0" prefHeight="26.0" prefWidth="307.0" />
-      <Label alignment="CENTER" layoutX="413.0" layoutY="288.0" prefHeight="26.0" prefWidth="307.0" />
-      <Label alignment="CENTER" layoutX="413.0" layoutY="327.0" prefHeight="26.0" prefWidth="307.0" />
-      <Label alignment="CENTER" layoutX="413.0" layoutY="369.0" prefHeight="26.0" prefWidth="307.0" />
+      <Label fx:id="ItemDetail2" alignment="CENTER" layoutX="397.0" layoutY="252.0" prefHeight="26.0" prefWidth="307.0" />
+      <Label fx:id="ItemDetail3" alignment="CENTER" layoutX="397.0" layoutY="284.0" prefHeight="26.0" prefWidth="307.0" />
+      <Label fx:id="ItemDetail4" alignment="CENTER" layoutX="397.0" layoutY="327.0" prefHeight="26.0" prefWidth="307.0" />
+      <Label fx:id="ItemDetail5" alignment="CENTER" layoutX="397.0" layoutY="369.0" prefHeight="26.0" prefWidth="307.0" />
       <Button fx:id="total" layoutX="742.0" layoutY="161.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Total:">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
+      <Label fx:id="CheckoutMessage" layoutX="632.0" layoutY="568.0" prefHeight="18.0" prefWidth="198.0" textFill="#f490b3">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
