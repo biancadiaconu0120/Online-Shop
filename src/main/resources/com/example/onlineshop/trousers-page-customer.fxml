@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.Image?>
@@ -55,5 +56,59 @@
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
+      <Button fx:id="add1" layoutX="310.0" layoutY="266.0" mnemonicParsing="false" onAction="#addItemToCart1" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="add2" layoutX="500.0" layoutY="266.0" mnemonicParsing="false" onAction="#addItemToCart2" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="add3" layoutX="680.0" layoutY="266.0" mnemonicParsing="false" onAction="#addItemToCart3" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="add4" layoutX="308.0" layoutY="420.0" mnemonicParsing="false" onAction="#addItemToCart4" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="add5" layoutX="498.0" layoutY="420.0" mnemonicParsing="false" onAction="#addItemToCart5" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="add6" layoutX="681.0" layoutY="420.0" mnemonicParsing="false" onAction="#addItemToCart6" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="size1" layoutX="360.0" layoutY="265.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+      <ChoiceBox fx:id="size2" layoutX="549.0" layoutY="265.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+      <ChoiceBox fx:id="size3" layoutX="730.0" layoutY="265.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+      <ChoiceBox fx:id="size4" layoutX="360.0" layoutY="419.0" prefHeight="18.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+      <ChoiceBox fx:id="size5" layoutX="549.0" layoutY="419.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+      <ChoiceBox fx:id="size6" layoutX="733.0" layoutY="418.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+      <Button fx:id="add7" layoutX="308.0" layoutY="563.0" mnemonicParsing="false" onAction="#addItemToCart7" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="size7" layoutX="360.0" layoutY="562.0" prefHeight="18.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+      <ChoiceBox fx:id="size8" layoutX="549.0" layoutY="562.0" prefHeight="18.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+      <ChoiceBox fx:id="size9" layoutX="733.0" layoutY="562.0" prefHeight="18.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+      <Button fx:id="add8" layoutX="498.0" layoutY="563.0" mnemonicParsing="false" onAction="#addItemToCart8" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="add9" layoutX="681.0" layoutY="563.0" mnemonicParsing="false" onAction="#addItemToCart9" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

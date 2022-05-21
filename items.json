@@ -3,4 +3,14 @@
   "price" : "gr",
   "imgPath" : "savedImage1.png",
   "category" : "trousers"
+}, {
+  "name" : "bluza1",
+  "price" : "12",
+  "imgPath" : "savedImage2.png",
+  "category" : "blouse"
+}, {
+  "name" : "trouser1",
+  "price" : "14",
+  "imgPath" : "savedImage3.png",
+  "category" : "trousers"
 } ]
