@@ -14,7 +14,7 @@ public class AddItem {
         persistItems();
     }
 
-    private static void persistItems() {
+    public static void persistItems() {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("items.json"), ItemsList.getItems());

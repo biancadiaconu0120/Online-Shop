@@ -39,111 +39,111 @@
                   <Font name="Cambria" size="36.0" />
                </font>
             </Label>
+            <ImageView fx:id="image1" fitHeight="100.0" fitWidth="100.0" layoutX="75.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image3" fitHeight="100.0" fitWidth="100.0" layoutX="445.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image2" fitHeight="100.0" fitWidth="100.0" layoutX="264.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image6" fitHeight="100.0" fitWidth="100.0" layoutX="444.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image5" fitHeight="100.0" fitWidth="100.0" layoutX="264.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image4" fitHeight="100.0" fitWidth="100.0" layoutX="75.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image9" fitHeight="100.0" fitWidth="100.0" layoutX="445.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image8" fitHeight="100.0" fitWidth="100.0" layoutX="264.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image7" fitHeight="100.0" fitWidth="100.0" layoutX="75.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="edit1" layoutX="75.0" layoutY="259.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete1" layoutX="125.0" layoutY="259.0" mnemonicParsing="false" onAction="#deleteItem1" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000; -fx-background-color: #F490B3;" text="Delete" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="edit2" layoutX="264.0" layoutY="259.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete2" layoutX="314.0" layoutY="259.0" mnemonicParsing="false" onAction="#deleteItem2" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Delete" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="edit3" layoutX="444.0" layoutY="259.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete3" layoutX="494.0" layoutY="259.0" mnemonicParsing="false" onAction="#deleteItem3" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Delete" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="edit4" layoutX="74.0" layoutY="411.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete4" layoutX="124.0" layoutY="411.0" mnemonicParsing="false" onAction="#deleteItem4" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000; -fx-background-color: #F490B3;" text="Delete" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="edit5" layoutX="264.0" layoutY="411.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete5" layoutX="314.0" layoutY="411.0" mnemonicParsing="false" onAction="#deleteItem5" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Delete" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="edit6" layoutX="444.0" layoutY="411.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete6" layoutX="494.0" layoutY="411.0" mnemonicParsing="false" onAction="#deleteItem6" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000; -fx-background-color: #F490B3;" text="Delete" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="edit7" layoutX="74.0" layoutY="557.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete7" layoutX="124.0" layoutY="557.0" mnemonicParsing="false" onAction="#deleteItem7" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Delete" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="edit8" layoutX="263.0" layoutY="557.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete8" layoutX="313.0" layoutY="557.0" mnemonicParsing="false" onAction="#deleteItem8" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000; -fx-background-color: #F490B3;" text="Delete" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="edit9" layoutX="444.0" layoutY="557.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete9" layoutX="494.0" layoutY="557.0" mnemonicParsing="false" onAction="#deleteItem9" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Delete" visible="false">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="addItem" layoutX="264.0" layoutY="110.0" mnemonicParsing="false" onAction="#goToAddItemPage" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Add Item">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
-      <ImageView fx:id="image1" fitHeight="100.0" fitWidth="100.0" layoutX="300.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="image3" fitHeight="100.0" fitWidth="100.0" layoutX="670.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="image2" fitHeight="100.0" fitWidth="100.0" layoutX="489.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="image6" fitHeight="100.0" fitWidth="100.0" layoutX="669.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="image5" fitHeight="100.0" fitWidth="100.0" layoutX="489.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="image4" fitHeight="100.0" fitWidth="100.0" layoutX="300.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="image9" fitHeight="100.0" fitWidth="100.0" layoutX="670.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="image8" fitHeight="100.0" fitWidth="100.0" layoutX="489.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="image7" fitHeight="100.0" fitWidth="100.0" layoutX="300.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true" />
-      <Button fx:id="edit1" layoutX="300.0" layoutY="252.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="delete1" layoutX="350.0" layoutY="252.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="edit2" layoutX="489.0" layoutY="252.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="delete2" layoutX="539.0" layoutY="252.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="edit3" layoutX="669.0" layoutY="252.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="delete3" layoutX="719.0" layoutY="252.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="edit4" layoutX="299.0" layoutY="404.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="delete4" layoutX="349.0" layoutY="404.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="edit5" layoutX="489.0" layoutY="404.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="delete5" layoutX="539.0" layoutY="404.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="edit6" layoutX="669.0" layoutY="404.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="delete6" layoutX="719.0" layoutY="404.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="edit7" layoutX="299.0" layoutY="550.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="delete7" layoutX="349.0" layoutY="550.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="edit8" layoutX="488.0" layoutY="550.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="delete8" layoutX="538.0" layoutY="550.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="edit9" layoutX="669.0" layoutY="550.0" mnemonicParsing="false" onAction="#editItem" prefHeight="26.0" prefWidth="43.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="delete9" layoutX="719.0" layoutY="550.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="26.0" prefWidth="50.0" style="-fx-text-fill: #000000;" visible="false">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="addItem" layoutX="489.0" layoutY="103.0" mnemonicParsing="false" onAction="#goToAddItemPage" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Add Item">
-         <font>
-            <Font name="Cambria" size="12.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>
