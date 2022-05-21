@@ -1,6 +1,61 @@
 [ {
-  "name" : "eff",
-  "price" : "gr",
+  "name" : "trousers0",
+  "price" : "13",
   "imgPath" : "savedImage1.png",
+  "category" : "trousers"
+}, {
+  "name" : "bluza1",
+  "price" : "12",
+  "imgPath" : "savedImage2.png",
+  "category" : "blouse"
+}, {
+  "name" : "trouser1",
+  "price" : "14",
+  "imgPath" : "savedImage3.png",
+  "category" : "trousers"
+}, {
+  "name" : "Trouser2",
+  "price" : "20",
+  "imgPath" : "savedImage4.png",
+  "category" : "trousers"
+}, {
+  "name" : "trousers3",
+  "price" : "12",
+  "imgPath" : "savedImage5.png",
+  "category" : "trousers"
+}, {
+  "name" : "Blouse3",
+  "price" : "12",
+  "imgPath" : "savedImage6.png",
+  "category" : "blouse"
+}, {
+  "name" : "dress1",
+  "price" : "12",
+  "imgPath" : "savedImage7.png",
+  "category" : "dress"
+}, {
+  "name" : "jacket1",
+  "price" : "12",
+  "imgPath" : "savedImage8.png",
+  "category" : "jacket"
+}, {
+  "name" : "blouse4",
+  "price" : "15",
+  "imgPath" : "savedImage9.png",
+  "category" : "blouse"
+}, {
+  "name" : "dress4",
+  "price" : "14",
+  "imgPath" : "savedImage10.png",
+  "category" : "dress"
+}, {
+  "name" : "jacket4",
+  "price" : "12",
+  "imgPath" : "savedImage11.png",
+  "category" : "jacket"
+}, {
+  "name" : "trousers5",
+  "price" : "14",
+  "imgPath" : "savedImage12.png",
   "category" : "trousers"
 } ]
