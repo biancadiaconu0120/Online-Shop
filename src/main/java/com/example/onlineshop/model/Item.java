@@ -8,15 +8,15 @@ public class Item {
     private String imgPath;
     private String category;
 
-    public Item(){
+    public Item() {
 
     }
 
-    public Item(String name, String price, String imgPath,String category) {
+    public Item(String name, String price, String imgPath, String category) {
         this.name = name;
         this.price = price;
         this.imgPath = imgPath;
-        this.category=category;
+        this.category = category;
     }
 
     public String getName() {

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class UsersList {
-    private static ArrayList<User> users= new ArrayList<>();
+    private static ArrayList<User> users = new ArrayList<>();
 
     public static void addUser(User newUser) throws UsernameAlreadyExistsException {
         checkUserDoesNotAlreadyExist(newUser.getUsername());
@@ -24,6 +24,7 @@ public class UsersList {
                 throw new UsernameAlreadyExistsException(username);
         }
     }
+
     public static boolean checkUserCredentials(User user) {
         return users.contains(user);
     }
@@ -39,7 +40,7 @@ public class UsersList {
         try {
             users = objectMapper.readValue(Paths.get("users.json").toFile(), new TypeReference<ArrayList<User>>() {
             });
-        }catch(JsonParseException e){
+        } catch (JsonParseException e) {
 
             e.printStackTrace();
         }

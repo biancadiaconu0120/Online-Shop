@@ -11,13 +11,13 @@ import javafx.scene.control.*;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import org.json.JSONObject;
 
+import org.json.JSONObject;
 
 
 public class RegisterController implements Initializable {
 
-    public RegisterController(){
+    public RegisterController() {
 
     }
 
@@ -39,35 +39,32 @@ public class RegisterController implements Initializable {
     @FXML
     private ChoiceBox<String> role;
 
-    private String[] roles={"customer","manager"};
+    private String[] roles = {"customer", "manager"};
 
-    public void userRegister(ActionEvent event) throws IOException{
+    public void userRegister(ActionEvent event) throws IOException {
         checkRegister();
     }
 
-    private void checkRegister() throws IOException{
+    private void checkRegister() throws IOException {
 
-        if(username.getText().isEmpty() ) {
+        if (username.getText().isEmpty()) {
             wrongRegistration.setText("Please fill in the username field");
-        }
-        else if(password.getText().isEmpty()) {
+        } else if (password.getText().isEmpty()) {
             wrongRegistration.setText("Please fill in the password field");
-        }
-        else if(role.getValue()==null) {
+        } else if (role.getValue() == null) {
             wrongRegistration.setText("Please fill in the role field");
-        }
-        else{
-                try {
-                    Register.addUser(username.getText(), password.getText(), (String) role.getValue());
-                    wrongRegistration.setText("Account created successfully!");
-                } catch (UsernameAlreadyExistsException e) {
-                    wrongRegistration.setText(e.getMessage());
-                }
+        } else {
+            try {
+                Register.addUser(username.getText(), password.getText(), (String) role.getValue());
+                wrongRegistration.setText("Account created successfully!");
+            } catch (UsernameAlreadyExistsException e) {
+                wrongRegistration.setText(e.getMessage());
+            }
         }
     }
 
-    public void goToSignIn(ActionEvent event) throws IOException{
-        Main m= new Main();
+    public void goToSignIn(ActionEvent event) throws IOException {
+        Main m = new Main();
         m.changeScene("login-page.fxml");
     }
 

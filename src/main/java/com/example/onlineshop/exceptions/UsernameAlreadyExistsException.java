@@ -1,6 +1,6 @@
 package com.example.onlineshop.exceptions;
 
-public class UsernameAlreadyExistsException extends Exception{
+public class UsernameAlreadyExistsException extends Exception {
     private String username;
 
     public UsernameAlreadyExistsException(String username) {

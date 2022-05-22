@@ -21,7 +21,7 @@ import java.util.ResourceBundle;
 
 public class AddItemController implements Initializable {
 
-    public AddItemController(){
+    public AddItemController() {
 
     }
 
@@ -54,25 +54,25 @@ public class AddItemController implements Initializable {
     @FXML
     private ChoiceBox<String> itemCategory;
 
-    private String[] categories={"blouse","trousers","jacket","dress"};
+    private String[] categories = {"blouse", "trousers", "jacket", "dress"};
 
     private File f;
 
-    private boolean imageUploaded=false;
+    private boolean imageUploaded = false;
 
 
     public void goToHomePage(ActionEvent event) throws IOException {
-        Main m= new Main();
+        Main m = new Main();
         m.changeScene("home-page-manager.fxml");
     }
 
     public void goToNewOrdersPage(ActionEvent event) throws IOException {
-        Main m= new Main();
+        Main m = new Main();
         m.changeScene("new-orders-page.fxml");
     }
 
     public void goToSignPage(ActionEvent event) throws IOException {
-        Main m= new Main();
+        Main m = new Main();
         m.changeScene("login-page.fxml");
     }
 
@@ -92,42 +92,34 @@ public class AddItemController implements Initializable {
             System.out.println(f.getName());
             outputfile = new File(f.getName());
             ImageIO.write(bi, "png", outputfile);
-            imageUploaded=true;
+            imageUploaded = true;
         } catch (IOException e) {
             wrongInput.setText("Please give an image!");
         }
     }
 
     public void addItemInList() throws IOException {
-        if(itemName.getText().isEmpty()){
+        if (itemName.getText().isEmpty()) {
             wrongInput.setText("Please give a Name!");
-        }
-        else if(itemPrice.getText().isEmpty()){
+        } else if (itemPrice.getText().isEmpty()) {
             wrongInput.setText("Please give a Price!");
-        }
-        else if(!imageUploaded){
+        } else if (!imageUploaded) {
             wrongInput.setText("Please give an image!");
-        }
-        else if(itemCategory.getValue()==null){
+        } else if (itemCategory.getValue() == null) {
             wrongInput.setText("Please give a category!");
-        }
-
-        else {
-            AddItem.addItem(itemName.getText(),itemPrice.getText(),f.getName(),itemCategory.getValue());
+        } else {
+            AddItem.addItem(itemName.getText(), itemPrice.getText(), f.getName(), itemCategory.getValue());
             wrongInput.setText("Item added successfully");
-            if(itemCategory.getValue().equals("blouse")) {
+            if (itemCategory.getValue().equals("blouse")) {
                 Main m = new Main();
                 m.changeScene("blouse-page-manager.fxml");
-            }
-            else if(itemCategory.getValue().equals("dress")) {
+            } else if (itemCategory.getValue().equals("dress")) {
                 Main m = new Main();
                 m.changeScene("dress-page-manager.fxml");
-            }
-            else if(itemCategory.getValue().equals("trousers")) {
+            } else if (itemCategory.getValue().equals("trousers")) {
                 Main m = new Main();
                 m.changeScene("trousers-page-manager.fxml");
-            }
-            else if(itemCategory.getValue().equals("jacket")) {
+            } else if (itemCategory.getValue().equals("jacket")) {
                 Main m = new Main();
                 m.changeScene("jacket-page-manager.fxml");
             }

@@ -20,16 +20,16 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws IOException {
         UsersList.loadUsersFromFile();
         ItemsList.loadItemsFromFile();
-        stg=primaryStage;
+        stg = primaryStage;
         primaryStage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource("login-page.fxml"));
         primaryStage.setTitle("OnlineShop");
-        primaryStage.setScene(new Scene(root,856,601));
+        primaryStage.setScene(new Scene(root, 856, 601));
         primaryStage.show();
     }
 
-    public void changeScene(String fxml) throws IOException{
-        Parent pane= FXMLLoader.load(getClass().getResource(fxml));
+    public void changeScene(String fxml) throws IOException {
+        Parent pane = FXMLLoader.load(getClass().getResource(fxml));
         stg.getScene().setRoot(pane);
     }
 
