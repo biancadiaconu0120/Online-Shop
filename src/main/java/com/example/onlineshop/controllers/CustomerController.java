@@ -92,6 +92,17 @@ public abstract class CustomerController extends UserController {
             add(size8ChoiceBox);
             add(size9ChoiceBox);
         }};
+        priceArrayList = new ArrayList<>() {{
+            add(price1Label);
+            add(price2Label);
+            add(price3Label);
+            add(price4Label);
+            add(price5Label);
+            add(price6Label);
+            add(price7Label);
+            add(price8Label);
+            add(price9Label);
+        }};
         size1ChoiceBox.getItems().addAll(sizes);
         size2ChoiceBox.getItems().addAll(sizes);
         size3ChoiceBox.getItems().addAll(sizes);
