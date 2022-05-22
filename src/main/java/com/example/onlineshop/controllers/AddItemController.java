@@ -1,6 +1,7 @@
 package com.example.onlineshop.controllers;
 
 import com.example.onlineshop.Main;
+import com.example.onlineshop.model.CartItemsList;
 import com.example.onlineshop.model.ItemsList;
 import com.example.onlineshop.services.AddItem;
 import javafx.event.ActionEvent;
@@ -89,7 +90,7 @@ public class AddItemController implements Initializable {
         File outputfile;
         try {
             BufferedImage bi = ImageIO.read(f);  // retrieve image
-            System.out.println(f.getName());
+            //System.out.println(f.getName());
             outputfile = new File(f.getName());
             ImageIO.write(bi, "png", outputfile);
             imageUploaded = true;
