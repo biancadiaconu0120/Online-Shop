@@ -30,20 +30,20 @@ public class ItemsList {
     private static int dressesNo;
 
     public ItemsList() {
-        blousesNo=0;
-        trousersNo=0;
-        jacketsNo=0;
-        dressesNo=0;
+        blousesNo = 0;
+        trousersNo = 0;
+        jacketsNo = 0;
+        dressesNo = 0;
     }
 
-    public static void decreaseCategoryNo(String category){
-        if(category.equals("dress") && dressesNo!=0)
+    public static void decreaseCategoryNo(String category) {
+        if (category.equals("dress") && dressesNo != 0)
             dressesNo--;
-        else if(category.equals("blouse") && blousesNo!=0)
+        else if (category.equals("blouse") && blousesNo != 0)
             blousesNo--;
-        else if(category.equals("jacket") && jacketsNo!=0)
+        else if (category.equals("jacket") && jacketsNo != 0)
             jacketsNo--;
-        else if(category.equals("trousers") && trousersNo!=0)
+        else if (category.equals("trousers") && trousersNo != 0)
             trousersNo--;
     }
 
@@ -61,25 +61,22 @@ public class ItemsList {
 
     public static void addItem(Item newItem) throws IOException {
         Image image = readImage(newItem.getImgPath());
-        if (newItem.getCategory().equals("blouse") && blousesNo<9) {
+        if (newItem.getCategory().equals("blouse") && blousesNo < 9) {
             blousesNo = blousesNo + 1;
             items.add(newItem);
             images.add(image);
             //BlousePageManagerController.getInstance().loadImage(newItem, image);
-        }
-        else if (newItem.getCategory().equals("trousers") && trousersNo<9) {
+        } else if (newItem.getCategory().equals("trousers") && trousersNo < 9) {
             trousersNo = trousersNo + 1;
             items.add(newItem);
             images.add(image);
             //TrousersPageManagerController.getInstance().loadImage(newItem, image);
-        }
-        else if (newItem.getCategory().equals("dress") && dressesNo<9) {
+        } else if (newItem.getCategory().equals("dress") && dressesNo < 9) {
             dressesNo = dressesNo + 1;
             items.add(newItem);
             images.add(image);
             //DressPageManagerController.getInstance().loadImage(newItem, image);
-        }
-        else if (newItem.getCategory().equals("jacket") && jacketsNo<9) {
+        } else if (newItem.getCategory().equals("jacket") && jacketsNo < 9) {
             jacketsNo = jacketsNo + 1;
             items.add(newItem);
             images.add(image);
@@ -93,7 +90,8 @@ public class ItemsList {
 
         //read items from json
         try {
-            items = objectMapper.readValue(Paths.get("items.json").toFile(), new TypeReference<>() {});
+            items = objectMapper.readValue(Paths.get("items.json").toFile(), new TypeReference<>() {
+            });
         } catch (JsonParseException e) {
 
             e.printStackTrace();
@@ -104,25 +102,22 @@ public class ItemsList {
             Image image = readImage(auxItem.getImgPath());
 
             if (auxItem.getCategory().equals("blouse")) {
-                if(blousesNo < 9) {
+                if (blousesNo < 9) {
                     blousesNo = blousesNo + 1;
                     images.add(image);
                 }
-            }
-            else if (auxItem.getCategory().equals("trousers")) {
-                if(trousersNo < 9) {
+            } else if (auxItem.getCategory().equals("trousers")) {
+                if (trousersNo < 9) {
                     trousersNo = trousersNo + 1;
                     images.add(image);
                 }
-            }
-            else if (auxItem.getCategory().equals("dress")) {
-                if(dressesNo < 9) {
+            } else if (auxItem.getCategory().equals("dress")) {
+                if (dressesNo < 9) {
                     dressesNo = dressesNo + 1;
                     images.add(image);
                 }
-            }
-            else if (auxItem.getCategory().equals("jacket")) {
-                if(jacketsNo < 9) {
+            } else if (auxItem.getCategory().equals("jacket")) {
+                if (jacketsNo < 9) {
                     jacketsNo = jacketsNo + 1;
                     images.add(image);
                 }
