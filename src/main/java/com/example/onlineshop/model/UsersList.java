@@ -5,6 +5,7 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -43,6 +44,16 @@ public class UsersList {
         } catch (JsonParseException e) {
 
             e.printStackTrace();
+        }
+    }
+
+    public static void persistUsers() {
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("users.json"), UsersList.getUsers());
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException();
         }
     }
 

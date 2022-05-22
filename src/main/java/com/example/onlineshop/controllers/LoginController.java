@@ -2,6 +2,8 @@ package com.example.onlineshop.controllers;
 
 import com.example.onlineshop.Main;
 import com.example.onlineshop.exceptions.UsernameAlreadyExistsException;
+import com.example.onlineshop.model.CartItemsList;
+import com.example.onlineshop.model.DataHolderForCurrentUser;
 import com.example.onlineshop.model.User;
 import com.example.onlineshop.model.UsersList;
 import com.example.onlineshop.services.Register;
@@ -47,16 +49,16 @@ public class LoginController implements Initializable {
 
     @FXML
     private void checkLogin() throws IOException {
-
         if (usernameTextField.getText().isEmpty()) {
             wrongLoginLabel.setText("Please fill in the username field");
         } else if (passwordPasswordField.getText().isEmpty()) {
             wrongLoginLabel.setText("Please fill in the password field");
         } else if (roleChoiceBox.getValue() == null) {
             wrongLoginLabel.setText("Please fill in the role field");
-        } else if (UsersList.checkUserCredentials(new User(usernameTextField.getText(), passwordPasswordField.getText(), roleChoiceBox.getValue()))) {
+        } else if (UsersList.checkUserCredentials(new User(username.getText(), password.getText(), role.getValue(),null))) {
             Main m = new Main();
             if (roleChoiceBox.getValue().equals("customer")) {
+                DataHolderForCurrentUser.setCurrentUser(new User(username.getText(), password.getText(), role.getValue()));
                 m.changeScene("home-page-customer.fxml");
             } else if (roleChoiceBox.getValue().equals("manager")) {
                 m.changeScene("home-page-manager.fxml");
