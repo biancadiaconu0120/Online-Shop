@@ -10,10 +10,27 @@
   "orders" : [ {
     "orderId" : "0Diana",
     "orderDetails" : "blouse1 200 RON     S, dress1 122 RON     M, ",
-    "orderStatus" : "unprocessed"
+    "orderStatus" : "processed"
   }, {
     "orderId" : "1Diana",
     "orderDetails" : "blouse1 200 RON     M, ",
     "orderStatus" : "processed"
+  }, {
+    "orderId" : "2Diana",
+    "orderDetails" : "blouse1 200 RON     S, blouse1 200 RON     L, ",
+    "orderStatus" : "processed"
+  }, {
+    "orderId" : "3Diana",
+    "orderDetails" : "blouse4 33 RON     S, ",
+    "orderStatus" : "unprocessed"
+  } ]
+}, {
+  "username" : "Didi",
+  "password" : "0E*\u001E��\u0017��*m\"`�F<X�`��Ђ\u0005\u0007�I��Qh!�a�Ը{�\u0016�L��Nq��~g\b\u0007鐹��+Ҳjz��",
+  "role" : "customer",
+  "orders" : [ {
+    "orderId" : "0Didi",
+    "orderDetails" : "blouse1 22 RON     XS, ",
+    "orderStatus" : "unprocessed"
   } ]
 } ]
