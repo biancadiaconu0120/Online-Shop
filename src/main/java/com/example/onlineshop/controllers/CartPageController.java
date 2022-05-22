@@ -23,6 +23,9 @@ public class CartPageController {
     private Button CheckoutButton;
 
     @FXML
+    private Button viewPreviousOrdersButton;
+
+    @FXML
     private Button totalButton;
     @FXML
     private Label ItemId1Label, ItemId2Label, ItemId3Label, ItemId4Label, ItemId5Label;
@@ -42,6 +45,11 @@ public class CartPageController {
         CartItemsList.removeAllItems();
         Main m = new Main();
         m.changeScene("login-page.fxml");
+    }
+
+    public void goToPreviousOrdersPage(ActionEvent event) throws IOException {
+        Main m = new Main();
+        m.changeScene("previous-orders-page.fxml");
     }
 
     public void goToHomePage(ActionEvent event) throws IOException {
@@ -115,7 +123,7 @@ public class CartPageController {
             int orderNumber=currentUser.getOrders().size();
             String orderId= orderNumber+userName;
 
-            currentUser.getOrders().add(new Order(orderId,orderDetails.toString(),"unproccesed"));
+            currentUser.getOrders().add(new Order(orderId,orderDetails.toString(),"unprocessed"));
 
             UsersList.persistUsers();
 
