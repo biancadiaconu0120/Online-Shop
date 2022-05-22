@@ -145,5 +145,14 @@
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
+      <Label fx:id="price1Label" alignment="CENTER" layoutX="223.0" layoutY="152.0" prefHeight="16.0" prefWidth="75.0" />
+      <Label fx:id="price2Label" alignment="CENTER" layoutX="411.0" layoutY="152.0" prefHeight="16.0" prefWidth="75.0" />
+      <Label fx:id="price3Label" alignment="CENTER" layoutX="592.0" layoutY="152.0" prefHeight="16.0" prefWidth="75.0" />
+      <Label fx:id="price4Label" alignment="CENTER" layoutX="223.0" layoutY="302.0" prefHeight="16.0" prefWidth="75.0" />
+      <Label fx:id="price5Label" alignment="CENTER" layoutX="410.0" layoutY="302.0" prefHeight="16.0" prefWidth="75.0" />
+      <Label fx:id="price6Label" alignment="CENTER" layoutX="592.0" layoutY="302.0" prefHeight="16.0" prefWidth="75.0" />
+      <Label fx:id="price7Label" alignment="CENTER" layoutX="221.0" layoutY="448.0" prefHeight="16.0" prefWidth="75.0" />
+      <Label fx:id="price8Label" alignment="CENTER" layoutX="410.0" layoutY="448.0" prefHeight="16.0" prefWidth="75.0" />
+      <Label fx:id="price9Label" alignment="CENTER" layoutX="592.0" layoutY="448.0" prefHeight="16.0" prefWidth="75.0" />
    </children>
 </AnchorPane>
