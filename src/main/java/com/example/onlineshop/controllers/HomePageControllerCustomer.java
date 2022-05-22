@@ -9,25 +9,25 @@ import java.io.IOException;
 
 public class HomePageControllerCustomer {
     @FXML
-    private Button goToCart;
+    private Button goToCartButton;
 
     @FXML
-    private Button viewPreviousOrders;
+    private Button viewPreviousOrdersButton;
 
     @FXML
-    private Button SignOut;
+    private Button SignOutButton;
 
     @FXML
-    private Button blouseCategory;
+    private Button blouseCategoryButton;
 
     @FXML
-    private Button dressCategory;
+    private Button dressCategoryButton;
 
     @FXML
-    private Button trousersCategory;
+    private Button trousersCategoryButton;
 
     @FXML
-    private Button jacketCategory;
+    private Button jacketCategoryButton;
 
     public void goToJacketPage(ActionEvent event) throws IOException {
         Main m = new Main();

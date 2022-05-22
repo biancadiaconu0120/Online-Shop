@@ -15,60 +15,60 @@ import java.util.ArrayList;
 
 public abstract class CustomerController extends UserController {
     @FXML
-    private Button goToCart;
+    private Button goToCartButton;
 
     @FXML
-    private Button viewPreviousOrders;
+    private Button viewPreviousOrdersButton;
 
     @FXML
-    private Button add1, add2, add3, add4, add5, add6, add7, add8, add9;
+    private Button add1Button, add2Button, add3Button, add4Button, add5Button, add6Button, add7Button, add8Button, add9Button;
 
     @FXML
-    private Label AddMessage1, AddMessage2, AddMessage3, AddMessage4, AddMessage5, AddMessage6, AddMessage7, AddMessage8, AddMessage9;
+    private Label AddMessage1Label, AddMessage2Label, AddMessage3Label, AddMessage4Label, AddMessage5Label, AddMessage6Label, AddMessage7Label, AddMessage8Label, AddMessage9Label;
 
     @FXML
-    private ChoiceBox<String> size1;
+    private ChoiceBox<String> size1ChoiceBox;
     @FXML
-    private ChoiceBox<String> size2;
+    private ChoiceBox<String> size2ChoiceBox;
     @FXML
-    private ChoiceBox<String> size3;
+    private ChoiceBox<String> size3ChoiceBox;
     @FXML
-    private ChoiceBox<String> size4;
+    private ChoiceBox<String> size4ChoiceBox;
     @FXML
-    private ChoiceBox<String> size5;
+    private ChoiceBox<String> size5ChoiceBox;
     @FXML
-    private ChoiceBox<String> size6;
+    private ChoiceBox<String> size6ChoiceBox;
     @FXML
-    private ChoiceBox<String> size7;
+    private ChoiceBox<String> size7ChoiceBox;
     @FXML
-    private ChoiceBox<String> size8;
+    private ChoiceBox<String> size8ChoiceBox;
     @FXML
-    private ChoiceBox<String> size9;
+    private ChoiceBox<String> size9ChoiceBox;
 
     private String[] sizes = {"XS", "S", "M", "L"};
 
     public void initialize() {
         imageViewArrayList = new ArrayList<>() {{
-            add(image1);
-            add(image2);
-            add(image3);
-            add(image4);
-            add(image5);
-            add(image6);
-            add(image7);
-            add(image8);
-            add(image9);
+            add(image1ImageView);
+            add(image2ImageView);
+            add(image3ImageView);
+            add(image4ImageView);
+            add(image5ImageView);
+            add(image6ImageView);
+            add(image7ImageView);
+            add(image8ImageView);
+            add(image9ImageView);
         }};
         button1ArrayList = new ArrayList<>() {{
-            add(add1);
-            add(add2);
-            add(add3);
-            add(add4);
-            add(add5);
-            add(add6);
-            add(add7);
-            add(add8);
-            add(add9);
+            add(add1Button);
+            add(add2Button);
+            add(add3Button);
+            add(add4Button);
+            add(add5Button);
+            add(add6Button);
+            add(add7Button);
+            add(add8Button);
+            add(add9Button);
         }};
         button2ArrayList = new ArrayList<>() {{
             add(null);
@@ -82,25 +82,25 @@ public abstract class CustomerController extends UserController {
             add(null);
         }};
         choiceBoxArrayList = new ArrayList<>() {{
-            add(size1);
-            add(size2);
-            add(size3);
-            add(size4);
-            add(size5);
-            add(size6);
-            add(size7);
-            add(size8);
-            add(size9);
+            add(size1ChoiceBox);
+            add(size2ChoiceBox);
+            add(size3ChoiceBox);
+            add(size4ChoiceBox);
+            add(size5ChoiceBox);
+            add(size6ChoiceBox);
+            add(size7ChoiceBox);
+            add(size8ChoiceBox);
+            add(size9ChoiceBox);
         }};
-        size1.getItems().addAll(sizes);
-        size2.getItems().addAll(sizes);
-        size3.getItems().addAll(sizes);
-        size4.getItems().addAll(sizes);
-        size5.getItems().addAll(sizes);
-        size6.getItems().addAll(sizes);
-        size7.getItems().addAll(sizes);
-        size8.getItems().addAll(sizes);
-        size9.getItems().addAll(sizes);
+        size1ChoiceBox.getItems().addAll(sizes);
+        size2ChoiceBox.getItems().addAll(sizes);
+        size3ChoiceBox.getItems().addAll(sizes);
+        size4ChoiceBox.getItems().addAll(sizes);
+        size5ChoiceBox.getItems().addAll(sizes);
+        size6ChoiceBox.getItems().addAll(sizes);
+        size7ChoiceBox.getItems().addAll(sizes);
+        size8ChoiceBox.getItems().addAll(sizes);
+        size9ChoiceBox.getItems().addAll(sizes);
         loadImages();
     }
 
@@ -121,111 +121,111 @@ public abstract class CustomerController extends UserController {
 
 
     public void addItemToCart1() {
-        if (size1.getValue() != null) {
-            AddMessage1.setVisible(true);
-            AddMessage1.setText("Added successfully");
-            CartItemsList.add(items.get(0), size1.getValue());
+        if (size1ChoiceBox.getValue() != null) {
+            AddMessage1Label.setVisible(true);
+            AddMessage1Label.setText("Added successfully");
+            CartItemsList.add(items.get(0), size1ChoiceBox.getValue());
         } else {
-            AddMessage1.setVisible(true);
-            AddMessage1.setText("Please select a size!");
+            AddMessage1Label.setVisible(true);
+            AddMessage1Label.setText("Please select a size!");
         }
 
 
     }
 
     public void addItemToCart2() {
-        if (size2.getValue() != null) {
-            AddMessage2.setVisible(true);
-            AddMessage2.setText("Added successfully");
-            CartItemsList.add(items.get(1), size2.getValue());
+        if (size2ChoiceBox.getValue() != null) {
+            AddMessage2Label.setVisible(true);
+            AddMessage2Label.setText("Added successfully");
+            CartItemsList.add(items.get(1), size2ChoiceBox.getValue());
         } else {
-            AddMessage2.setVisible(true);
-            AddMessage2.setText("Please select a size!");
+            AddMessage2Label.setVisible(true);
+            AddMessage2Label.setText("Please select a size!");
         }
 
     }
 
     public void addItemToCart3() {
-        if (size3.getValue() != null) {
-            AddMessage3.setVisible(true);
-            AddMessage3.setText("Added successfully");
-            CartItemsList.add(items.get(2), size3.getValue());
+        if (size3ChoiceBox.getValue() != null) {
+            AddMessage3Label.setVisible(true);
+            AddMessage3Label.setText("Added successfully");
+            CartItemsList.add(items.get(2), size3ChoiceBox.getValue());
         } else {
-            AddMessage3.setVisible(true);
-            AddMessage3.setText("Please select a size!");
+            AddMessage3Label.setVisible(true);
+            AddMessage3Label.setText("Please select a size!");
         }
 
     }
 
     public void addItemToCart4() {
-        if (size4.getValue() != null) {
-            AddMessage4.setVisible(true);
-            AddMessage4.setText("Added successfully");
-            CartItemsList.add(items.get(3), size4.getValue());
+        if (size4ChoiceBox.getValue() != null) {
+            AddMessage4Label.setVisible(true);
+            AddMessage4Label.setText("Added successfully");
+            CartItemsList.add(items.get(3), size4ChoiceBox.getValue());
         } else {
-            AddMessage4.setVisible(true);
-            AddMessage4.setText("Please select a size!");
+            AddMessage4Label.setVisible(true);
+            AddMessage4Label.setText("Please select a size!");
         }
 
     }
 
     public void addItemToCart5() {
-        if (size5.getValue() != null) {
-            AddMessage5.setVisible(true);
-            AddMessage5.setText("Added successfully");
-            CartItemsList.add(items.get(4), size5.getValue());
+        if (size5ChoiceBox.getValue() != null) {
+            AddMessage5Label.setVisible(true);
+            AddMessage5Label.setText("Added successfully");
+            CartItemsList.add(items.get(4), size5ChoiceBox.getValue());
         } else {
-            AddMessage4.setVisible(true);
-            AddMessage4.setText("Please select a size!");
+            AddMessage4Label.setVisible(true);
+            AddMessage4Label.setText("Please select a size!");
         }
 
     }
 
     public void addItemToCart6() {
-        if (size6.getValue() != null) {
-            AddMessage6.setVisible(true);
-            AddMessage6.setText("Added successfully");
-            CartItemsList.add(items.get(5), size6.getValue());
+        if (size6ChoiceBox.getValue() != null) {
+            AddMessage6Label.setVisible(true);
+            AddMessage6Label.setText("Added successfully");
+            CartItemsList.add(items.get(5), size6ChoiceBox.getValue());
         } else {
-            AddMessage6.setVisible(true);
-            AddMessage6.setText("Please select a size!");
+            AddMessage6Label.setVisible(true);
+            AddMessage6Label.setText("Please select a size!");
         }
 
     }
 
     public void addItemToCart7() {
-        if (size7.getValue() != null) {
-            AddMessage7.setVisible(true);
-            AddMessage7.setText("Added successfully");
-            CartItemsList.add(items.get(6), size7.getValue());
+        if (size7ChoiceBox.getValue() != null) {
+            AddMessage7Label.setVisible(true);
+            AddMessage7Label.setText("Added successfully");
+            CartItemsList.add(items.get(6), size7ChoiceBox.getValue());
         } else {
-            AddMessage7.setVisible(true);
-            AddMessage7.setText("Please select a size!");
+            AddMessage7Label.setVisible(true);
+            AddMessage7Label.setText("Please select a size!");
         }
 
 
     }
 
     public void addItemToCart8() {
-        if (size8.getValue() != null) {
-            AddMessage8.setVisible(true);
-            AddMessage8.setText("Added successfully");
-            CartItemsList.add(items.get(7), size8.getValue());
+        if (size8ChoiceBox.getValue() != null) {
+            AddMessage8Label.setVisible(true);
+            AddMessage8Label.setText("Added successfully");
+            CartItemsList.add(items.get(7), size8ChoiceBox.getValue());
         } else {
-            AddMessage8.setVisible(true);
-            AddMessage8.setText("Please select a size!");
+            AddMessage8Label.setVisible(true);
+            AddMessage8Label.setText("Please select a size!");
         }
 
     }
 
     public void addItemToCart9() {
-        if (size9.getValue() != null) {
-            AddMessage9.setVisible(true);
-            AddMessage9.setText("Added successfully");
-            CartItemsList.add(items.get(8), size9.getValue());
+        if (size9ChoiceBox.getValue() != null) {
+            AddMessage9Label.setVisible(true);
+            AddMessage9Label.setText("Added successfully");
+            CartItemsList.add(items.get(8), size9ChoiceBox.getValue());
         } else {
-            AddMessage9.setVisible(true);
-            AddMessage9.setText("Please select a size!");
+            AddMessage9Label.setVisible(true);
+            AddMessage9Label.setText("Please select a size!");
         }
 
 

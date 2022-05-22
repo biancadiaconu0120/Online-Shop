@@ -12,16 +12,16 @@ import java.util.ArrayList;
 
 abstract public class ManagerController extends UserController {
     @FXML
-    protected Button edit1, edit2, edit3, edit4, edit5, edit6, edit7, edit8, edit9;
+    protected Button edit1Button, edit2Button, edit3Button, edit4Button, edit5Button, edit6Button, edit7Button, edit8Button, edit9Button;
 
     @FXML
-    protected Button delete1, delete2, delete3, delete4, delete5, delete6, delete7, delete8, delete9;
+    protected Button delete1Button, delete2Button, delete3Button, delete4Button, delete5Button, delete6Button, delete7Button, delete8Button, delete9Button;
 
     @FXML
-    protected Button viewNewOrders;
+    protected Button viewNewOrdersButton;
 
     @FXML
-    protected Button addItem;
+    protected Button addItemButton;
 
 
     public ManagerController() {
@@ -31,26 +31,26 @@ abstract public class ManagerController extends UserController {
     @Override
     public void initialize() {
         imageViewArrayList = new ArrayList<>() {{
-            add(image1);
-            add(image2);
-            add(image3);
-            add(image4);
-            add(image5);
-            add(image6);
-            add(image7);
-            add(image8);
-            add(image9);
+            add(image1ImageView);
+            add(image2ImageView);
+            add(image3ImageView);
+            add(image4ImageView);
+            add(image5ImageView);
+            add(image6ImageView);
+            add(image7ImageView);
+            add(image8ImageView);
+            add(image9ImageView);
         }};
         button1ArrayList = new ArrayList<>() {{
-            add(delete1);
-            add(delete2);
-            add(delete3);
-            add(delete4);
-            add(delete5);
-            add(delete6);
-            add(delete7);
-            add(delete8);
-            add(delete9);
+            add(delete1Button);
+            add(delete2Button);
+            add(delete3Button);
+            add(delete4Button);
+            add(delete5Button);
+            add(delete6Button);
+            add(delete7Button);
+            add(delete8Button);
+            add(delete9Button);
         }};
         button2ArrayList = new ArrayList<>() {{
             add(null);
@@ -105,47 +105,47 @@ abstract public class ManagerController extends UserController {
     }
 
     public void deleteItem1() throws IOException {
-        ItemsList.getImages().remove(image1.getImage());
+        ItemsList.getImages().remove(image1ImageView.getImage());
         deleteItem(0);
     }
 
     public void deleteItem2() throws IOException {
-        ItemsList.getImages().remove(image2.getImage());
+        ItemsList.getImages().remove(image2ImageView.getImage());
         deleteItem(1);
     }
 
     public void deleteItem3() throws IOException {
-        ItemsList.getImages().remove(image3.getImage());
+        ItemsList.getImages().remove(image3ImageView.getImage());
         deleteItem(2);
     }
 
     public void deleteItem4() throws IOException {
-        ItemsList.getImages().remove(image4.getImage());
+        ItemsList.getImages().remove(image4ImageView.getImage());
         deleteItem(3);
     }
 
     public void deleteItem5() throws IOException {
-        ItemsList.getImages().remove(image5.getImage());
+        ItemsList.getImages().remove(image5ImageView.getImage());
         deleteItem(4);
     }
 
     public void deleteItem6() throws IOException {
-        ItemsList.getImages().remove(image6.getImage());
+        ItemsList.getImages().remove(image6ImageView.getImage());
         deleteItem(5);
     }
 
     public void deleteItem7() throws IOException {
-        ItemsList.getImages().remove(image7.getImage());
+        ItemsList.getImages().remove(image7ImageView.getImage());
         deleteItem(6);
     }
 
     public void deleteItem8() throws IOException {
-        ItemsList.getImages().remove(image8.getImage());
+        ItemsList.getImages().remove(image8ImageView.getImage());
         deleteItem(7);
     }
 
     public void deleteItem9() throws IOException {
-        ItemsList.getImages().remove(image9.getImage());
+        ItemsList.getImages().remove(image9ImageView.getImage());
         deleteItem(8);
     }
 

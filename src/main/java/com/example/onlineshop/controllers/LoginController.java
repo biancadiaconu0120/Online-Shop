@@ -22,22 +22,22 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    private Button signIn;
+    private Button signInButton;
 
     @FXML
-    private Button register;
+    private Button registerButton;
 
     @FXML
-    private Label wrongLogin;
+    private Label wrongLoginLabel;
 
     @FXML
-    private TextField username;
+    private TextField usernameTextField;
 
     @FXML
-    private PasswordField password;
+    private PasswordField passwordPasswordField;
 
     @FXML
-    private ChoiceBox<String> role;
+    private ChoiceBox<String> roleChoiceBox;
 
     private String[] roles = {"customer", "manager"};
 
@@ -48,21 +48,21 @@ public class LoginController implements Initializable {
     @FXML
     private void checkLogin() throws IOException {
 
-        if (username.getText().isEmpty()) {
-            wrongLogin.setText("Please fill in the username field");
-        } else if (password.getText().isEmpty()) {
-            wrongLogin.setText("Please fill in the password field");
-        } else if (role.getValue() == null) {
-            wrongLogin.setText("Please fill in the role field");
-        } else if (UsersList.checkUserCredentials(new User(username.getText(), password.getText(), role.getValue()))) {
+        if (usernameTextField.getText().isEmpty()) {
+            wrongLoginLabel.setText("Please fill in the username field");
+        } else if (passwordPasswordField.getText().isEmpty()) {
+            wrongLoginLabel.setText("Please fill in the password field");
+        } else if (roleChoiceBox.getValue() == null) {
+            wrongLoginLabel.setText("Please fill in the role field");
+        } else if (UsersList.checkUserCredentials(new User(usernameTextField.getText(), passwordPasswordField.getText(), roleChoiceBox.getValue()))) {
             Main m = new Main();
-            if (role.getValue().equals("customer")) {
+            if (roleChoiceBox.getValue().equals("customer")) {
                 m.changeScene("home-page-customer.fxml");
-            } else if (role.getValue().equals("manager")) {
+            } else if (roleChoiceBox.getValue().equals("manager")) {
                 m.changeScene("home-page-manager.fxml");
             }
         } else {
-            wrongLogin.setText("User credentials are introduced wrong!");
+            wrongLoginLabel.setText("User credentials are introduced wrong!");
         }
 
 
@@ -75,7 +75,7 @@ public class LoginController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        role.getItems().addAll(roles);
+        roleChoiceBox.getItems().addAll(roles);
     }
 
 

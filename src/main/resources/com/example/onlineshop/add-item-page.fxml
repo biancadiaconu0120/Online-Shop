@@ -14,17 +14,17 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="856.0" style="-fx-background-color: #FFF7FC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineshop.controllers.AddItemController">
    <children>
       <SplitPane layoutX="-6.0" prefHeight="601.0" prefWidth="228.0" style="-fx-background-color: #FFF7FC; -fx-border-color: #F490B3;" />
-      <Button fx:id="signOut" layoutX="35.0" layoutY="353.0" mnemonicParsing="false" onAction="#goToSignPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Sign Out">
+      <Button fx:id="signOutButton" layoutX="35.0" layoutY="353.0" mnemonicParsing="false" onAction="#goToSignPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Sign Out">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="viewNewOrders" layoutX="35.0" layoutY="301.0" mnemonicParsing="false" onAction="#goToNewOrdersPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="View New Orders">
+      <Button fx:id="viewNewOrdersButton" layoutX="35.0" layoutY="301.0" mnemonicParsing="false" onAction="#goToNewOrdersPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="View New Orders">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="goToHome" layoutX="35.0" layoutY="252.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Go To Home Page">
+      <Button fx:id="goToHomeButton" layoutX="35.0" layoutY="252.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Go To Home Page">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
@@ -48,13 +48,13 @@
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
-      <TextField fx:id="itemName" layoutX="464.0" layoutY="252.0" style="-fx-background-color: #FFF7FC; -fx-border-color: #F490B3;" />
-      <Button fx:id="uploadImage" layoutX="489.0" layoutY="396.0" mnemonicParsing="false" onAction="#uploadChoosenImage" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Upload Image">
+      <TextField fx:id="itemNameTextField" layoutX="464.0" layoutY="252.0" style="-fx-background-color: #FFF7FC; -fx-border-color: #F490B3;" />
+      <Button fx:id="uploadImageButton" layoutX="489.0" layoutY="396.0" mnemonicParsing="false" onAction="#uploadChoosenImage" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Upload Image">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
-      <TextField fx:id="itemPrice" layoutX="463.0" layoutY="300.0" style="-fx-background-color: #FFF7FC; -fx-border-color: #F490B3;" />
+      <TextField fx:id="itemPriceTextField" layoutX="463.0" layoutY="300.0" style="-fx-background-color: #FFF7FC; -fx-border-color: #F490B3;" />
       <Label layoutX="464.0" layoutY="236.0" text="Item Name">
          <font>
             <Font name="Cambria" size="12.0" />
@@ -65,11 +65,11 @@
             <Font name="Cambria" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="wrongInput" alignment="CENTER" layoutX="222.0" layoutY="438.0" prefHeight="30.0" prefWidth="636.0" style="-fx-text-fill: #F490B3;">
+      <Label fx:id="wrongInputLabel" alignment="CENTER" layoutX="222.0" layoutY="438.0" prefHeight="30.0" prefWidth="636.0" style="-fx-text-fill: #F490B3;">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <ChoiceBox fx:id="itemCategory" accessibleRole="CHECK_BOX" layoutX="460.0" layoutY="352.0" prefHeight="15.0" prefWidth="159.0" style="-fx-background-color: #FFF7FC; -fx-border-color: #F490B3;" />
+      <ChoiceBox fx:id="itemCategoryChoiceBox" accessibleRole="CHECK_BOX" layoutX="460.0" layoutY="352.0" prefHeight="15.0" prefWidth="159.0" style="-fx-background-color: #FFF7FC; -fx-border-color: #F490B3;" />
    </children>
 </AnchorPane>

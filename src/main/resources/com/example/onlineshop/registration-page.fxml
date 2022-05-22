@@ -38,23 +38,23 @@
             <Font name="Cambria" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="username" layoutX="428.0" layoutY="221.0" promptText="Username" />
-      <PasswordField fx:id="password" layoutX="428.0" layoutY="298.0" promptText="Password" />
-      <ChoiceBox fx:id="role" accessibleRole="CHECK_BOX" layoutX="424.0" layoutY="367.0" prefHeight="15.0" prefWidth="159.0" />
+      <TextField fx:id="usernameTextField" layoutX="428.0" layoutY="221.0" promptText="Username" />
+      <PasswordField fx:id="passwordPasswordField" layoutX="428.0" layoutY="298.0" promptText="Password" />
+      <ChoiceBox fx:id="roleChoiceBox" accessibleRole="CHECK_BOX" layoutX="424.0" layoutY="367.0" prefHeight="15.0" prefWidth="159.0" />
       <Label layoutX="428.0" layoutY="341.0" prefHeight="25.0" prefWidth="81.0" text="Role">
          <font>
             <Font name="Cambria" size="15.0" />
          </font>
       </Label>
-      <Button fx:id="becomeAMember" layoutX="424.0" layoutY="454.0" mnemonicParsing="false" onAction="#userRegister" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Become a Member!">
+      <Button fx:id="becomeAMemberButton" layoutX="424.0" layoutY="454.0" mnemonicParsing="false" onAction="#userRegister" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Become a Member!">
          <font>
             <Font name="Cambria" size="12.0" />
          </font></Button>
-      <Button fx:id="backToSignIn" layoutX="636.0" layoutY="453.0" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="24.0" prefWidth="120.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Back to Sign In">
+      <Button fx:id="backToSignInButton" layoutX="636.0" layoutY="453.0" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="24.0" prefWidth="120.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Back to Sign In">
          <font>
             <Font name="Cambria" size="12.0" />
          </font></Button>
-      <Label fx:id="wrongRegistration" layoutX="424.0" layoutY="519.0" prefHeight="30.0" prefWidth="350.0" style="-fx-text-fill: #F490B3;">
+      <Label fx:id="wrongRegistrationLabel" layoutX="424.0" layoutY="519.0" prefHeight="30.0" prefWidth="350.0" style="-fx-text-fill: #F490B3;">
          <font>
             <Font size="14.0" />
          </font>

@@ -22,22 +22,22 @@ public class RegisterController implements Initializable {
     }
 
     @FXML
-    private Button becomeAMember;
+    private Button becomeAMemberButton;
 
     @FXML
-    private Button backToSignIn;
+    private Button backToSignInButton;
 
     @FXML
-    private Label wrongRegistration;
+    private Label wrongRegistrationLabel;
 
     @FXML
-    private TextField username;
+    private TextField usernameTextField;
 
     @FXML
-    private PasswordField password;
+    private PasswordField passwordPasswordField;
 
     @FXML
-    private ChoiceBox<String> role;
+    private ChoiceBox<String> roleChoiceBox;
 
     private String[] roles = {"customer", "manager"};
 
@@ -47,18 +47,18 @@ public class RegisterController implements Initializable {
 
     private void checkRegister() throws IOException {
 
-        if (username.getText().isEmpty()) {
-            wrongRegistration.setText("Please fill in the username field");
-        } else if (password.getText().isEmpty()) {
-            wrongRegistration.setText("Please fill in the password field");
-        } else if (role.getValue() == null) {
-            wrongRegistration.setText("Please fill in the role field");
+        if (usernameTextField.getText().isEmpty()) {
+            wrongRegistrationLabel.setText("Please fill in the username field");
+        } else if (passwordPasswordField.getText().isEmpty()) {
+            wrongRegistrationLabel.setText("Please fill in the password field");
+        } else if (roleChoiceBox.getValue() == null) {
+            wrongRegistrationLabel.setText("Please fill in the role field");
         } else {
             try {
-                Register.addUser(username.getText(), password.getText(), (String) role.getValue());
-                wrongRegistration.setText("Account created successfully!");
+                Register.addUser(usernameTextField.getText(), passwordPasswordField.getText(), (String) roleChoiceBox.getValue());
+                wrongRegistrationLabel.setText("Account created successfully!");
             } catch (UsernameAlreadyExistsException e) {
-                wrongRegistration.setText(e.getMessage());
+                wrongRegistrationLabel.setText(e.getMessage());
             }
         }
     }
@@ -70,6 +70,6 @@ public class RegisterController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        role.getItems().addAll(roles);
+        roleChoiceBox.getItems().addAll(roles);
     }
 }
