@@ -26,16 +26,7 @@ public class Register {
 
     public static void addUser(String username, String password, String role) throws UsernameAlreadyExistsException {
         UsersList.addUser(new User(username, password, role));
-        persistUsers();
+        UsersList.persistUsers();
     }
 
-    private static void persistUsers() {
-        try {
-            ObjectMapper objectMapper = new ObjectMapper();
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("users.json"), UsersList.getUsers());
-        } catch (IOException e) {
-            e.printStackTrace();
-            throw new RuntimeException();
-        }
-    }
 }

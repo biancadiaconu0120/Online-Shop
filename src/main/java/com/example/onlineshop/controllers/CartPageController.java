@@ -1,7 +1,7 @@
 package com.example.onlineshop.controllers;
 
 import com.example.onlineshop.Main;
-import com.example.onlineshop.model.CartItemsList;
+import com.example.onlineshop.model.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -35,8 +35,11 @@ public class CartPageController {
 
     private int totalsum;
 
+    StringBuilder orderDetails;
+
 
     public void goToSignPage(ActionEvent event) throws IOException {
+        CartItemsList.removeAllItems();
         Main m = new Main();
         m.changeScene("login-page.fxml");
     }
@@ -47,7 +50,10 @@ public class CartPageController {
     }
 
     public void initialize() {
+        orderDetails= new StringBuilder();
         for (int i = 0; i < CartItemsList.getItems().size(); i++) {
+            orderDetails.append(CartItemsList.getIdOfItem(i)).append(" ");
+            orderDetails.append(CartItemsList.getDetails1(i)).append(", ");
             if (i == 0) {
                 ItemId1.setText(CartItemsList.getIdOfItem(0));
                 ItemDetail1.setText(CartItemsList.getDetails1(0));
@@ -96,13 +102,26 @@ public class CartPageController {
         if (totalsum != 0) {
             CheckoutMessage.setVisible(true);
             CheckoutMessage.setText("Your order has been placed!");
+
+            User currentUser=null;
+            for(int i=0;i<UsersList.getUsers().size();i++){
+                if(DataHolderForCurrentUser.getCurrentUser().equals(UsersList.getUsers().get(i)))
+                    currentUser=UsersList.getUsers().get(i);
+            }
+
+
+            String userName= currentUser.getUsername();
+            int orderNumber=currentUser.getOrders().size();
+            String orderId= orderNumber+userName;
+
+            currentUser.getOrders().add(new Order(orderId,orderDetails.toString(),"unproccesed"));
+
+            UsersList.persistUsers();
+
         } else {
             CheckoutMessage.setVisible(true);
             CheckoutMessage.setText("Your order has NOT been placed!");
-
         }
-
-
     }
 
 

@@ -1,0 +1,28 @@
+[ {
+  "username" : "Bia",
+  "password" : "�?��H}ĸ�\u0011v�\u0010�aho���p\u000F�[(�\u0000\u0012q�N�$T�iMӡ.�(2\u0007��޶y\u0006@Z\r�ʙ!\nH(\u001F\u0015",
+  "role" : "manager",
+  "orders" : null
+}, {
+  "username" : "Diana",
+  "password" : "�{N�ji�j��챔z���{D\u0007��|X��\u0000F���WA��Kq�\u0011>����?A�����\b�g/�\rZ�S�I",
+  "role" : "customer",
+  "orders" : [ {
+    "orderId" : "0Diana",
+    "orderDetails" : "lala 123 RON     S, lala 123 RON     L, ",
+    "orderStatus" : "unproccesed"
+  }, {
+    "orderId" : "1Diana",
+    "orderDetails" : "dres 12 RON     S, ",
+    "orderStatus" : "unproccesed"
+  } ]
+}, {
+  "username" : "Diana2",
+  "password" : "�m�B���j@�ͻ�\u0000��:�\u0005:F6(��\u0017�\u001F��q��43DAQ\u001F��k�?���M׸v�����T]�y���",
+  "role" : "customer",
+  "orders" : [ {
+    "orderId" : "0Diana2",
+    "orderDetails" : "dres 12 RON     S, ",
+    "orderStatus" : "unproccesed"
+  } ]
+} ]

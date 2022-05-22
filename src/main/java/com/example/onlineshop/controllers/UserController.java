@@ -1,6 +1,7 @@
 package com.example.onlineshop.controllers;
 
 import com.example.onlineshop.Main;
+import com.example.onlineshop.model.CartItemsList;
 import com.example.onlineshop.model.Item;
 import com.example.onlineshop.model.ItemsList;
 import javafx.event.ActionEvent;
@@ -58,6 +59,7 @@ public abstract class UserController {
     public abstract void goToHomePage() throws IOException;
 
     public void goToSignPage(ActionEvent event) throws IOException {
+        CartItemsList.removeAllItems();
         Main m = new Main();
         m.changeScene("login-page.fxml");
     }
