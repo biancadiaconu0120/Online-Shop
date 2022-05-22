@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -42,6 +43,9 @@ public abstract class UserController {
     @FXML
     protected ImageView image9ImageView;
 
+    @FXML
+    protected Label price1Label,price2Label,price3Label,price4Label,price5Label,price6Label,price7Label,price8Label,price9Label;
+
     protected ArrayList<Item> items = new ArrayList<>(9);
     protected int itemsNb = 0;
 
@@ -53,6 +57,7 @@ public abstract class UserController {
     protected ArrayList<Button> button1ArrayList;
     protected ArrayList<Button> button2ArrayList;
     protected ArrayList<ChoiceBox<String>> choiceBoxArrayList;
+    protected ArrayList<Label> priceArrayList;
 
     public abstract void initialize();
 
@@ -78,12 +83,12 @@ public abstract class UserController {
             int i = itemsNb;
             itemsNb++;
             activateStuff(i, imageViewArrayList.get(i), img, item, button1ArrayList.get(i),
-                    button2ArrayList.get(i), choiceBoxArrayList.get(i));
+                    button2ArrayList.get(i), choiceBoxArrayList.get(i),priceArrayList.get(i));
         }
     }
 
     protected void activateStuff(int i, ImageView imageView, Image img, Item item,
-                                 Button button1, Button button2, ChoiceBox<String> checkBox) {
+                                 Button button1, Button button2, ChoiceBox<String> checkBox,Label price) {
         if (imageView != null) {
             imageView.setImage(img);
             imageView.setVisible(true);
@@ -94,6 +99,8 @@ public abstract class UserController {
             button2.setVisible(true);
         if (checkBox != null)
             checkBox.setVisible(true);
+        if(price!=null)
+            price.setText("Pret:"+ item.getPrice() +"RON");
         items.add(i, item);
     }
 }

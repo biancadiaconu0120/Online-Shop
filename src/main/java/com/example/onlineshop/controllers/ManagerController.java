@@ -74,6 +74,17 @@ abstract public class ManagerController extends UserController {
             add(null);
             add(null);
         }};
+        priceArrayList = new ArrayList<>() {{
+            add(price1Label);
+            add(price1Label);
+            add(price1Label);
+            add(price1Label);
+            add(price1Label);
+            add(price1Label);
+            add(price1Label);
+            add(price1Label);
+            add(price1Label);
+        }};
         loadImages();
     }
 

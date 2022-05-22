@@ -46,7 +46,7 @@
         <ImageView fx:id="image3ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="644.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
         <ImageView fx:id="image2ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="473.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
         <ImageView fx:id="image6ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="644.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true" />
-        <ImageView fx:id="image5ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="476.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image5ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="476.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true" />
         <ImageView fx:id="image4ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="310.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true" />
         <ImageView fx:id="image9ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="640.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" />
         <ImageView fx:id="image8ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="476.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" />
@@ -119,5 +119,14 @@
         <Label fx:id="AddMessage7Label" layoutX="310.0" layoutY="577.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
         <Label fx:id="AddMessage8Label" layoutX="476.0" layoutY="577.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
         <Label fx:id="AddMessage9Label" layoutX="644.0" layoutY="577.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
+        <Label fx:id="price1Label" alignment="CENTER" layoutX="238.0" layoutY="146.0" prefHeight="16.0" prefWidth="60.0" />
+        <Label fx:id="price2Label" alignment="CENTER" layoutX="426.0" layoutY="146.0" prefHeight="16.0" prefWidth="60.0" />
+        <Label fx:id="price3Label" alignment="CENTER" layoutX="607.0" layoutY="146.0" prefHeight="16.0" prefWidth="60.0" />
+        <Label fx:id="price4Label" alignment="CENTER" layoutX="238.0" layoutY="296.0" prefHeight="16.0" prefWidth="60.0" />
+        <Label fx:id="price5Label" alignment="CENTER" layoutX="425.0" layoutY="296.0" prefHeight="16.0" prefWidth="60.0" />
+        <Label fx:id="price6Label" alignment="CENTER" layoutX="607.0" layoutY="296.0" prefHeight="16.0" prefWidth="60.0" />
+        <Label fx:id="price7Label" alignment="CENTER" layoutX="236.0" layoutY="442.0" prefHeight="16.0" prefWidth="60.0" />
+        <Label fx:id="price8Label" alignment="CENTER" layoutX="425.0" layoutY="442.0" prefHeight="16.0" prefWidth="60.0" />
+        <Label fx:id="price9Label" alignment="CENTER" layoutX="607.0" layoutY="442.0" prefHeight="16.0" prefWidth="60.0" />
     </children>
 </AnchorPane>
