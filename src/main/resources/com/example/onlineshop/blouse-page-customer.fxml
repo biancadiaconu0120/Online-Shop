@@ -13,17 +13,17 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="856.0" style="-fx-background-color: #FFF7FC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineshop.controllers.BlousePageCustomerController">
     <children>
         <SplitPane layoutX="-6.0" prefHeight="601.0" prefWidth="228.0" style="-fx-background-color: #FFF7FC; -fx-border-color: #F490B3;" />
-        <Button fx:id="signOut" layoutX="35.0" layoutY="353.0" mnemonicParsing="false" onAction="#goToSignPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Sign Out">
+        <Button fx:id="signOutButton" layoutX="35.0" layoutY="353.0" mnemonicParsing="false" onAction="#goToSignPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Sign Out">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
-        <Button fx:id="viewPreviousOrders" layoutX="35.0" layoutY="301.0" mnemonicParsing="false" onAction="#goToPreviousOrdersPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="View Previous Orders">
+        <Button fx:id="viewPreviousOrdersButton" layoutX="35.0" layoutY="301.0" mnemonicParsing="false" onAction="#goToPreviousOrdersPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="View Previous Orders">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
-        <Button fx:id="goToCart" layoutX="35.0" layoutY="252.0" mnemonicParsing="false" onAction="#goToCartPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Go To Cart">
+        <Button fx:id="goToCartButton" layoutX="35.0" layoutY="252.0" mnemonicParsing="false" onAction="#goToCartPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Go To Cart">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
@@ -42,82 +42,82 @@
                 </Label>
             </children>
         </Pane>
-        <ImageView fx:id="image1" fitHeight="100.0" fitWidth="100.0" layoutX="310.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
-        <ImageView fx:id="image3" fitHeight="100.0" fitWidth="100.0" layoutX="644.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
-        <ImageView fx:id="image2" fitHeight="100.0" fitWidth="100.0" layoutX="473.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
-        <ImageView fx:id="image6" fitHeight="100.0" fitWidth="100.0" layoutX="644.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true" />
-        <ImageView fx:id="image5" fitHeight="100.0" fitWidth="100.0" layoutX="476.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true" visible="false" />
-        <ImageView fx:id="image4" fitHeight="100.0" fitWidth="100.0" layoutX="310.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true" />
-        <ImageView fx:id="image9" fitHeight="100.0" fitWidth="100.0" layoutX="640.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" />
-        <ImageView fx:id="image8" fitHeight="100.0" fitWidth="100.0" layoutX="476.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" />
-        <ImageView fx:id="image7" fitHeight="100.0" fitWidth="100.0" layoutX="310.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" />
-        <Button fx:id="goToHome" layoutX="35.0" layoutY="406.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Go To Home Page">
+        <ImageView fx:id="image1ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="310.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image3ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="644.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image2ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="473.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image6ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="644.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image5ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="476.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image4ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="310.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image9ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="640.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image8ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="476.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image7ImageView" fitHeight="100.0" fitWidth="100.0" layoutX="310.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="goToHomeButton" layoutX="35.0" layoutY="406.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Go To Home Page">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
-        <Button fx:id="add1" layoutX="308.0" layoutY="249.0" mnemonicParsing="false" onAction="#addItemToCart1" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+        <Button fx:id="add1Button" layoutX="308.0" layoutY="249.0" mnemonicParsing="false" onAction="#addItemToCart1" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
-        <Button fx:id="add2" layoutX="475.0" layoutY="249.0" mnemonicParsing="false" onAction="#addItemToCart2" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+        <Button fx:id="add2Button" layoutX="475.0" layoutY="249.0" mnemonicParsing="false" onAction="#addItemToCart2" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
-        <Button fx:id="add3" layoutX="644.0" layoutY="249.0" mnemonicParsing="false" onAction="#addItemToCart3" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+        <Button fx:id="add3Button" layoutX="644.0" layoutY="249.0" mnemonicParsing="false" onAction="#addItemToCart3" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
-        <Button fx:id="add4" layoutX="308.0" layoutY="401.0" mnemonicParsing="false" onAction="#addItemToCart4" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+        <Button fx:id="add4Button" layoutX="308.0" layoutY="401.0" mnemonicParsing="false" onAction="#addItemToCart4" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
-        <Button fx:id="add5" layoutX="475.0" layoutY="401.0" mnemonicParsing="false" onAction="#addItemToCart5" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+        <Button fx:id="add5Button" layoutX="475.0" layoutY="401.0" mnemonicParsing="false" onAction="#addItemToCart5" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
-        <Button fx:id="add6" layoutX="644.0" layoutY="401.0" mnemonicParsing="false" onAction="#addItemToCart6" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+        <Button fx:id="add6Button" layoutX="644.0" layoutY="401.0" mnemonicParsing="false" onAction="#addItemToCart6" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
-        <ChoiceBox fx:id="size1" layoutX="360.0" layoutY="248.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
-        <ChoiceBox fx:id="size2" layoutX="526.0" layoutY="248.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
-        <ChoiceBox fx:id="size3" layoutX="694.0" layoutY="248.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
-        <ChoiceBox fx:id="size4" layoutX="360.0" layoutY="400.0" prefHeight="18.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
-        <ChoiceBox fx:id="size5" layoutX="526.0" layoutY="400.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
-        <ChoiceBox fx:id="size6" layoutX="694.0" layoutY="400.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
-        <Button fx:id="add7" layoutX="308.0" layoutY="551.0" mnemonicParsing="false" onAction="#addItemToCart7" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+        <ChoiceBox fx:id="size1ChoiceBox" layoutX="360.0" layoutY="248.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+        <ChoiceBox fx:id="size2ChoiceBox" layoutX="526.0" layoutY="248.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+        <ChoiceBox fx:id="size3ChoiceBox" layoutX="694.0" layoutY="248.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+        <ChoiceBox fx:id="size4ChoiceBox" layoutX="360.0" layoutY="400.0" prefHeight="18.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+        <ChoiceBox fx:id="size5ChoiceBox" layoutX="526.0" layoutY="400.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+        <ChoiceBox fx:id="size6ChoiceBox" layoutX="694.0" layoutY="400.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+        <Button fx:id="add7Button" layoutX="308.0" layoutY="551.0" mnemonicParsing="false" onAction="#addItemToCart7" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
-        <ChoiceBox fx:id="size7" layoutX="360.0" layoutY="549.0" prefHeight="18.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
-        <ChoiceBox fx:id="size8" layoutX="526.0" layoutY="547.0" prefHeight="18.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
-        <ChoiceBox fx:id="size9" layoutX="694.0" layoutY="549.0" prefHeight="18.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
-        <Button fx:id="add8" layoutX="475.0" layoutY="548.0" mnemonicParsing="false" onAction="#addItemToCart8" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+        <ChoiceBox fx:id="size7ChoiceBox" layoutX="360.0" layoutY="549.0" prefHeight="18.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+        <ChoiceBox fx:id="size8ChoiceBox" layoutX="526.0" layoutY="547.0" prefHeight="18.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+        <ChoiceBox fx:id="size9ChoiceBox" layoutX="694.0" layoutY="549.0" prefHeight="18.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" visible="false" />
+        <Button fx:id="add8Button" layoutX="475.0" layoutY="548.0" mnemonicParsing="false" onAction="#addItemToCart8" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
-        <Button fx:id="add9" layoutX="644.0" layoutY="550.0" mnemonicParsing="false" onAction="#addItemToCart9" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
+        <Button fx:id="add9Button" layoutX="644.0" layoutY="550.0" mnemonicParsing="false" onAction="#addItemToCart9" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: #F490B3;" text="Add" visible="false">
             <font>
                 <Font name="Cambria" size="12.0" />
             </font>
         </Button>
-        <Label fx:id="AddMessage1" layoutX="304.0" layoutY="281.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
-        <Label fx:id="AddMessage2" layoutX="476.0" layoutY="281.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
-        <Label fx:id="AddMessage3" layoutX="644.0" layoutY="281.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
-        <Label fx:id="AddMessage4" layoutX="310.0" layoutY="427.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
-        <Label fx:id="AddMessage5" layoutX="476.0" layoutY="427.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
-        <Label fx:id="AddMessage6" layoutX="644.0" layoutY="427.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
-        <Label fx:id="AddMessage7" layoutX="310.0" layoutY="577.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
-        <Label fx:id="AddMessage8" layoutX="476.0" layoutY="577.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
-        <Label fx:id="AddMessage9" layoutX="644.0" layoutY="577.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
+        <Label fx:id="AddMessage1Label" layoutX="304.0" layoutY="281.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
+        <Label fx:id="AddMessage2Label" layoutX="476.0" layoutY="281.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
+        <Label fx:id="AddMessage3Label" layoutX="644.0" layoutY="281.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
+        <Label fx:id="AddMessage4Label" layoutX="310.0" layoutY="427.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
+        <Label fx:id="AddMessage5Label" layoutX="476.0" layoutY="427.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
+        <Label fx:id="AddMessage6Label" layoutX="644.0" layoutY="427.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
+        <Label fx:id="AddMessage7Label" layoutX="310.0" layoutY="577.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
+        <Label fx:id="AddMessage8Label" layoutX="476.0" layoutY="577.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
+        <Label fx:id="AddMessage9Label" layoutX="644.0" layoutY="577.0" prefHeight="18.0" prefWidth="100.0" textFill="#f490b3" />
     </children>
 </AnchorPane>

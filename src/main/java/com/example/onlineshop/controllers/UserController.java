@@ -16,30 +16,30 @@ import java.util.ArrayList;
 public abstract class UserController {
 
     @FXML
-    protected Button SignOut;
+    protected Button SignOutButton;
 
     @FXML
-    protected Button goToHome;
+    protected Button goToHomeButton;
 
     @FXML
-    protected ImageView image1;
+    protected ImageView image1ImageView;
 
     @FXML
-    protected ImageView image2;
+    protected ImageView image2ImageView;
     @FXML
-    protected ImageView image3;
+    protected ImageView image3ImageView;
     @FXML
-    protected ImageView image4;
+    protected ImageView image4ImageView;
     @FXML
-    protected ImageView image5;
+    protected ImageView image5ImageView;
     @FXML
-    protected ImageView image6;
+    protected ImageView image6ImageView;
     @FXML
-    protected ImageView image7;
+    protected ImageView image7ImageView;
     @FXML
-    protected ImageView image8;
+    protected ImageView image8ImageView;
     @FXML
-    protected ImageView image9;
+    protected ImageView image9ImageView;
 
     protected ArrayList<Item> items = new ArrayList<>(9);
     protected int itemsNb = 0;

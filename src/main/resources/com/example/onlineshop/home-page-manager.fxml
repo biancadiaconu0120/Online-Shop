@@ -12,12 +12,12 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="856.0" style="-fx-background-color: #FFF7FC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineshop.controllers.HomePageControllerManager">
    <children>
       <SplitPane layoutX="-6.0" prefHeight="601.0" prefWidth="228.0" style="-fx-background-color: #FFF7FC; -fx-border-color: #F490B3;" />
-      <Button fx:id="signOut" layoutX="35.0" layoutY="301.0" mnemonicParsing="false" onAction="#goToSignPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Sign Out">
+      <Button fx:id="signOutButton" layoutX="35.0" layoutY="301.0" mnemonicParsing="false" onAction="#goToSignPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Sign Out">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="goToNewOrders" layoutX="35.0" layoutY="252.0" mnemonicParsing="false" onAction="#goToNewOrdersPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="View New Orders">
+      <Button fx:id="goToNewOrdersButton" layoutX="35.0" layoutY="252.0" mnemonicParsing="false" onAction="#goToNewOrdersPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="View New Orders">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
@@ -56,22 +56,22 @@
             <Image url="@img/TrousersCategory.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="blouseCategory" layoutX="332.0" layoutY="314.0" mnemonicParsing="false" onAction="#goToBlousePage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Blouse Category">
+      <Button fx:id="blouseCategoryButton" layoutX="332.0" layoutY="314.0" mnemonicParsing="false" onAction="#goToBlousePage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Blouse Category">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="jacketCategory" layoutX="332.0" layoutY="547.0" mnemonicParsing="false" onAction="#goToJacketPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Jacket Category">
+      <Button fx:id="jacketCategoryButton" layoutX="332.0" layoutY="547.0" mnemonicParsing="false" onAction="#goToJacketPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Jacket Category">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="dressCategory" layoutX="610.0" layoutY="314.0" mnemonicParsing="false" onAction="#goToDressPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Dress Category">
+      <Button fx:id="dressCategoryButton" layoutX="610.0" layoutY="314.0" mnemonicParsing="false" onAction="#goToDressPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Dress Category">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="trousersCategory" layoutX="610.0" layoutY="547.0" mnemonicParsing="false" onAction="#goToTrousersPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Trousers Category">
+      <Button fx:id="trousersCategoryButton" layoutX="610.0" layoutY="547.0" mnemonicParsing="false" onAction="#goToTrousersPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Trousers Category">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
