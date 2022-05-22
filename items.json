@@ -1,1 +1,16 @@
-[ ]
+[ {
+  "name" : "blouse1",
+  "price" : "200",
+  "imgPath" : "A.jpg",
+  "category" : "blouse"
+}, {
+  "name" : "dress1",
+  "price" : "122",
+  "imgPath" : "pants2.jpg",
+  "category" : "dress"
+}, {
+  "name" : "jacket1",
+  "price" : "`233",
+  "imgPath" : "pants.jpg",
+  "category" : "jacket"
+} ]
