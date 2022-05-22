@@ -11,27 +11,27 @@ import java.io.IOException;
 
 public class CartPageController {
     @FXML
-    private Button SignOut;
+    private Button SignOutButton;
 
     @FXML
-    private Button goToHome;
+    private Button goToHomeButton;
 
     @FXML
     private Button clearCartButton;
 
     @FXML
-    private Button Checkout;
+    private Button CheckoutButton;
 
     @FXML
-    private Button total;
+    private Button totalButton;
     @FXML
-    private Label ItemId1, ItemId2, ItemId3, ItemId4, ItemId5;
+    private Label ItemId1Label, ItemId2Label, ItemId3Label, ItemId4Label, ItemId5Label;
     @FXML
-    private Label ItemDetail1, ItemDetail2, ItemDetail3, ItemDetail4, ItemDetail5;
+    private Label ItemDetail1Label, ItemDetail2Label, ItemDetail3Label, ItemDetail4Label, ItemDetail5Label;
     @FXML
-    private Label totalPrice;
+    private Label totalPriceLabel;
     @FXML
-    private Label CheckoutMessage;
+    private Label CheckoutMessageLabel;
 
     private int totalsum;
 
@@ -55,34 +55,34 @@ public class CartPageController {
             orderDetails.append(CartItemsList.getIdOfItem(i)).append(" ");
             orderDetails.append(CartItemsList.getDetails1(i)).append(", ");
             if (i == 0) {
-                ItemId1.setText(CartItemsList.getIdOfItem(0));
-                ItemDetail1.setText(CartItemsList.getDetails1(0));
+                ItemId1Label.setText(CartItemsList.getIdOfItem(0));
+                ItemDetail1Label.setText(CartItemsList.getDetails1(0));
                 totalsum = totalsum + CartItemsList.getPriceItems(0);
 
             } else if (i == 1) {
-                ItemId2.setText(CartItemsList.getIdOfItem(1));
-                ItemDetail2.setText(CartItemsList.getDetails1(1));
+                ItemId2Label.setText(CartItemsList.getIdOfItem(1));
+                ItemDetail2Label.setText(CartItemsList.getDetails1(1));
                 totalsum = totalsum + CartItemsList.getPriceItems(1);
 
             } else if (i == 2) {
-                ItemId3.setText(CartItemsList.getIdOfItem(2));
-                ItemDetail3.setText(CartItemsList.getDetails1(2));
+                ItemId3Label.setText(CartItemsList.getIdOfItem(2));
+                ItemDetail3Label.setText(CartItemsList.getDetails1(2));
                 totalsum = totalsum + CartItemsList.getPriceItems(2);
 
             } else if (i == 3) {
-                ItemId4.setText(CartItemsList.getIdOfItem(3));
-                ItemDetail4.setText(CartItemsList.getDetails1(3));
+                ItemId4Label.setText(CartItemsList.getIdOfItem(3));
+                ItemDetail4Label.setText(CartItemsList.getDetails1(3));
                 totalsum = totalsum + CartItemsList.getPriceItems(3);
             } else if (i == 4) {
-                ItemId5.setText(CartItemsList.getIdOfItem(4));
-                ItemDetail5.setText(CartItemsList.getDetails1(4));
+                ItemId5Label.setText(CartItemsList.getIdOfItem(4));
+                ItemDetail5Label.setText(CartItemsList.getDetails1(4));
                 totalsum = totalsum + CartItemsList.getPriceItems(4);
 
             }
 
 
         }
-        totalPrice.setText("" + totalsum + " RON");
+        totalPriceLabel.setText("" + totalsum + " RON");
 
 
     }
@@ -100,8 +100,9 @@ public class CartPageController {
 
     public void Checkout(ActionEvent event) throws IOException {
         if (totalsum != 0) {
-            CheckoutMessage.setVisible(true);
-            CheckoutMessage.setText("Your order has been placed!");
+
+            CheckoutMessageLabel.setVisible(true);
+            CheckoutMessageLabel.setText("Your order has been placed!");
 
             User currentUser=null;
             for(int i=0;i<UsersList.getUsers().size();i++){
@@ -119,8 +120,8 @@ public class CartPageController {
             UsersList.persistUsers();
 
         } else {
-            CheckoutMessage.setVisible(true);
-            CheckoutMessage.setText("Your order has NOT been placed!");
+            CheckoutMessageLabel.setVisible(true);
+            CheckoutMessageLabel.setText("Your order has NOT been placed!");
         }
     }
 

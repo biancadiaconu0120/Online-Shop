@@ -11,22 +11,22 @@ public class HomePageControllerManager {
 
 
     @FXML
-    private Button viewNewOrders;
+    private Button viewNewOrdersButton;
 
     @FXML
-    private Button SignOut;
+    private Button SignOutButton;
 
     @FXML
-    private Button blouseCategory;
+    private Button blouseCategoryButton;
 
     @FXML
-    private Button dressCategory;
+    private Button dressCategoryButton;
 
     @FXML
-    private Button trousersCategory;
+    private Button trousersCategoryButton;
 
     @FXML
-    private Button jacketCategory;
+    private Button jacketCategoryButton;
 
     public void goToJacketPage(ActionEvent event) throws IOException {
         Main m = new Main();

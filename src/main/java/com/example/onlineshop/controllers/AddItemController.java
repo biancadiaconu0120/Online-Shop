@@ -29,31 +29,31 @@ public class AddItemController implements Initializable {
     List<String> firstFile;
 
     @FXML
-    private Button viewNewOrders;
+    private Button viewNewOrdersButton;
 
     @FXML
-    private Button SignOut;
+    private Button SignOutButton;
 
     @FXML
-    private Button goToHome;
+    private Button goToHomeButton;
 
     @FXML
     private Button uploadImage;
 
     @FXML
-    private TextField itemName;
+    private TextField itemNameTextField;
 
     @FXML
-    private TextField itemPrice;
+    private TextField itemPriceTextField;
 
     @FXML
     private Button addItemButton;
 
     @FXML
-    private Label wrongInput;
+    private Label wrongInputLabel;
 
     @FXML
-    private ChoiceBox<String> itemCategory;
+    private ChoiceBox<String> itemCategoryChoiceBox;
 
     private String[] categories = {"blouse", "trousers", "jacket", "dress"};
 
@@ -95,32 +95,32 @@ public class AddItemController implements Initializable {
             ImageIO.write(bi, "png", outputfile);
             imageUploaded = true;
         } catch (IOException e) {
-            wrongInput.setText("Please give an image!");
+            wrongInputLabel.setText("Please give an image!");
         }
     }
 
     public void addItemInList() throws IOException {
-        if (itemName.getText().isEmpty()) {
-            wrongInput.setText("Please give a Name!");
-        } else if (itemPrice.getText().isEmpty()) {
-            wrongInput.setText("Please give a Price!");
+        if (itemNameTextField.getText().isEmpty()) {
+            wrongInputLabel.setText("Please give a Name!");
+        } else if (itemPriceTextField.getText().isEmpty()) {
+            wrongInputLabel.setText("Please give a Price!");
         } else if (!imageUploaded) {
-            wrongInput.setText("Please give an image!");
-        } else if (itemCategory.getValue() == null) {
-            wrongInput.setText("Please give a category!");
+            wrongInputLabel.setText("Please give an image!");
+        } else if (itemCategoryChoiceBox.getValue() == null) {
+            wrongInputLabel.setText("Please give a category!");
         } else {
-            AddItem.addItem(itemName.getText(), itemPrice.getText(), f.getName(), itemCategory.getValue());
-            wrongInput.setText("Item added successfully");
-            if (itemCategory.getValue().equals("blouse")) {
+            AddItem.addItem(itemNameTextField.getText(), itemPriceTextField.getText(), f.getName(), itemCategoryChoiceBox.getValue());
+            wrongInputLabel.setText("Item added successfully");
+            if (itemCategoryChoiceBox.getValue().equals("blouse")) {
                 Main m = new Main();
                 m.changeScene("blouse-page-manager.fxml");
-            } else if (itemCategory.getValue().equals("dress")) {
+            } else if (itemCategoryChoiceBox.getValue().equals("dress")) {
                 Main m = new Main();
                 m.changeScene("dress-page-manager.fxml");
-            } else if (itemCategory.getValue().equals("trousers")) {
+            } else if (itemCategoryChoiceBox.getValue().equals("trousers")) {
                 Main m = new Main();
                 m.changeScene("trousers-page-manager.fxml");
-            } else if (itemCategory.getValue().equals("jacket")) {
+            } else if (itemCategoryChoiceBox.getValue().equals("jacket")) {
                 Main m = new Main();
                 m.changeScene("jacket-page-manager.fxml");
             }
@@ -131,7 +131,7 @@ public class AddItemController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        itemCategory.getItems().addAll(categories);
+        itemCategoryChoiceBox.getItems().addAll(categories);
         firstFile = new ArrayList<>();
         firstFile.add("*.jpg");
         firstFile.add("*.png");
