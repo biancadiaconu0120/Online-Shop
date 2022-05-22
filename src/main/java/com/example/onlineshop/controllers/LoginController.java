@@ -55,10 +55,10 @@ public class LoginController implements Initializable {
             wrongLoginLabel.setText("Please fill in the password field");
         } else if (roleChoiceBox.getValue() == null) {
             wrongLoginLabel.setText("Please fill in the role field");
-        } else if (UsersList.checkUserCredentials(new User(username.getText(), password.getText(), role.getValue(),null))) {
+        } else if (UsersList.checkUserCredentials(new User(usernameTextField.getText(), passwordPasswordField.getText(), roleChoiceBox.getValue(),null))) {
             Main m = new Main();
             if (roleChoiceBox.getValue().equals("customer")) {
-                DataHolderForCurrentUser.setCurrentUser(new User(username.getText(), password.getText(), role.getValue()));
+                DataHolderForCurrentUser.setCurrentUser(new User(usernameTextField.getText(), passwordPasswordField.getText(), roleChoiceBox.getValue()));
                 m.changeScene("home-page-customer.fxml");
             } else if (roleChoiceBox.getValue().equals("manager")) {
                 m.changeScene("home-page-manager.fxml");
