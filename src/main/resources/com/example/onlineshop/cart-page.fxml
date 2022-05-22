@@ -11,7 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="856.0" style="-fx-background-color: #FFF7FC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlineshop.controllers.CartPageController">
    <children>
-      <SplitPane layoutX="-6.0" layoutY="-3.0" prefHeight="601.0" prefWidth="228.0" style="-fx-background-color: #FFF7FC; -fx-border-color: #F490B3;" />
+      <SplitPane layoutX="-6.0" prefHeight="601.0" prefWidth="228.0" style="-fx-background-color: #FFF7FC; -fx-border-color: #F490B3;" />
       <Button fx:id="signOutButton" layoutX="35.0" layoutY="301.0" mnemonicParsing="false" onAction="#goToSignPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="Sign Out">
          <font>
             <Font name="Cambria" size="12.0" />
@@ -77,5 +77,10 @@
             <Font name="Cambria" size="12.0" />
          </font>
       </Label>
+      <Button fx:id="viewPreviousOrdersButton" layoutX="35.0" layoutY="356.0" mnemonicParsing="false" onAction="#goToPreviousOrdersPage" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F490B3; -fx-text-fill: #000000;" text="View Previous Orders">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
